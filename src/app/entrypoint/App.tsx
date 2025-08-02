@@ -16,12 +16,12 @@ function App() {
     const loadTranslations = async () => {
       try {
         const { messages } = await import(
-          `../../locales/${locale}/translations.ts`
+          `../../locales/${locale}/translations.po`
         );
         i18n.load(locale, messages);
         i18n.activate(locale);
         // eslint-disable-next-line
-      } catch {}
+      } catch { }
     };
 
     loadTranslations();

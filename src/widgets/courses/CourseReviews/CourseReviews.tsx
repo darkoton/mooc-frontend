@@ -14,7 +14,7 @@ import PixelArtDotsIcon from "@shared/assets/icons/pixelArtDots.svg?react";
 
 import s from "./CourseReviews.module.scss";
 
-const LoginModal = lazy(() => import("@features/auth/LoginModal/LoginModal"));
+const LoginModal = lazy(() => import("./LoginModal/LoginModal"));
 const ReviewModal = lazy(() => import("./ReviewModal/ReviewModal"));
 
 export default function CourseReviews() {
@@ -22,7 +22,7 @@ export default function CourseReviews() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const auth = useAuthStore();
+  const { auth } = useAuthStore();
 
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showReviewModal, setShowReviewModal] = useState(false);
@@ -103,7 +103,7 @@ export default function CourseReviews() {
       </Suspense>
       <Suspense fallback={<Backdrop open />}>
         {showReviewModal && (
-          <ReviewModal onClose={() => setShowReviewModal(false)} />
+          <ReviewModal logo="#" onClose={() => setShowReviewModal(false)} />
         )}
       </Suspense>
     </>

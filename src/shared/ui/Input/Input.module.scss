@@ -1,0 +1,56 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  line-height: 1.5;
+  padding: 19px 16px;
+  height: 62px;
+  border-radius: 12px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  font-size: 1rem;
+
+  &::-webkit-input-placeholder {
+    color: #919dbb;
+  }
+  &::-moz-placeholder {
+    color: #919dbb;
+  }
+  &::placeholder {
+    color: #919dbb;
+  }
+
+  // remove search input "X" button
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  &:hover {
+    border-color: #b8b8b8;
+  }
+}
+
+.endAdornment {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+@media (max-width: breakpoints.$sm) {
+  .input {
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,31 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #ab47bc;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.spinner.center {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+}
+
+.top {
+  display: block;
+  margin: 20px auto 0 auto;
+  position: static;
+}

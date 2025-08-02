@@ -1,0 +1,21 @@
+.pageWrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.errText {
+  color: colors.$error;
+  margin-top: 88px;
+}
+
+.tabsSection {
+  margin-top: 48px;
+  margin-bottom: 80px;
+}

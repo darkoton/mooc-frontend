@@ -1,0 +1,113 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  min-width: 260px;
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.header {
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 384px;
+  aspect-ratio: 1.76 / 1;
+  margin-bottom: 16px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.providerRow {
+  width: 58px;
+  height: 16px;
+  margin-bottom: 4px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.5;
+  @include mixins.lineClamp(2);
+}
+
+.footer {
+  margin-top: auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #777a80;
+  font-size: 12px;
+  line-height: 1.25;
+  column-gap: 4px;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+  }
+  .certificate {
+    margin-right: 4px;
+  }
+  .duration {
+    margin-left: 4px;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+    margin-right: 4px;
+  }
+}
+
+.saveBtn {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  @include mixins.hoverArea(48px, 48px);
+}
+
+.link {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+}
+
+@media (max-width: breakpoints.$sm) {
+  .title {
+    font-size: 14px;
+    margin-bottom: 70px;
+  }
+}

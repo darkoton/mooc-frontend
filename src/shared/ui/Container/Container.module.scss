@@ -1,0 +1,18 @@
+.container {
+  max-width: 1298px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+@media (max-width: breakpoints.$lg) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .container {
+    padding: 0 16px;
+  }
+}

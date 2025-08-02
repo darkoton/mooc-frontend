@@ -1,0 +1,19 @@
+@use "./assets/icons/dotPatternIcon.scss";
+
+.iconBtn {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  padding: 0;
+  border: none;
+  display: grid;
+  place-items: center;
+  background-color: colors.$yellow;
+  overflow: hidden;
+  cursor: pointer;
+
+  background-image: url(dotPatternIcon.$icon);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

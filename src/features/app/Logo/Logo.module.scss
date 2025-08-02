@@ -1,0 +1,22 @@
+.wrapper {
+  width: 142px;
+  height: 24px;
+
+  a,
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  a {
+    position: relative;
+    @include mixins.hoverArea(100%, 48px);
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .wrapper a {
+    @include mixins.hoverArea(100%, 40px);
+  }
+}

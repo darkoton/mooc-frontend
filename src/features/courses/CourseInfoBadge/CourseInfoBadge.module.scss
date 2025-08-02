@@ -1,0 +1,41 @@
+.info {
+  flex-shrink: 0;
+  width: fit-content;
+  display: grid;
+  column-gap: 8px;
+  grid-template-areas:
+    "icon name"
+    "icon value";
+  padding: 8px 16px 8px 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  background-color: #fff;
+
+  svg,
+  img {
+    grid-area: icon;
+    width: 42px;
+    height: 42px;
+  }
+  p:first-of-type {
+    grid-area: name;
+    margin: 0;
+    color: #777a80;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  p:last-of-type {
+    grid-area: value;
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 700;
+    color: colors.$text-primary;
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .info p:last-of-type {
+    font-size: 14px;
+  }
+}

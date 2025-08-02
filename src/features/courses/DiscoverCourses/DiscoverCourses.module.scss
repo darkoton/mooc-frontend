@@ -1,0 +1,154 @@
+// Discover
+
+.discoverSection {
+  background-color: #ebeced;
+  padding: 32px 0;
+}
+
+.discoverContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discoverLeft {
+  max-width: 592px;
+}
+
+.discoverTitle {
+  margin-top: 0;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 36px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-family: "Inter", sans-serif;
+
+  svg {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.subtitle {
+  margin: 0;
+  color: #3f4752;
+}
+
+.discoverRight {
+  flex-shrink: 0;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.ratingBox {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow:
+    0px 0px 18.3px 0px rgba(38, 41, 44, 0.05),
+    0px -1px 19.9px 0px rgba(204, 204, 204, 0.25);
+
+  a {
+    display: block;
+    color: #777a80;
+    text-align: center;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 47px;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 8px;
+
+  svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+  }
+}
+
+.leaveReviewLink {
+  font-weight: 700;
+  color: #473c05;
+  padding: 12px 24px;
+  border: 1px solid rgba(71, 60, 5, 0.3);
+  border-radius: 12px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: breakpoints.$lg) {
+  .discoverRight {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: breakpoints.$md) {
+  .tabsSection {
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
+
+  .discoverContainer {
+    flex-direction: column;
+    row-gap: 48px;
+  }
+
+  .discoverTitle {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .discoverContainer {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .discoverTitle {
+    flex-direction: column;
+    row-gap: 8px;
+    text-align: center;
+    font-size: 34px;
+
+    svg {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .ratingBox {
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .rating {
+    font-size: 45px;
+  }
+
+  .leaveReviewLink {
+    font-size: 14px;
+  }
+}

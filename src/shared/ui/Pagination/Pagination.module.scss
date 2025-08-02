@@ -1,0 +1,38 @@
+.container {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.pageLink {
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  min-width: 60px;
+  min-height: 40px;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.activeLink {
+  background-color: #fff;
+}
+
+.previousLink,
+.nextLink {
+  display: none;
+}
+
+@media (max-width: breakpoints.$sm) {
+  .pageLink {
+    font-size: 0.875rem;
+    color: colors.$text-primary;
+  }
+}

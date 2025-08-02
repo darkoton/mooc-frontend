@@ -1,0 +1,183 @@
+.container {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.left {
+  flex-shrink: 0;
+  width: 479px;
+  height: 602px;
+  filter: drop-shadow(18px 0px colors.$yellow);
+
+  .leftInner {
+    height: 100%;
+    clip-path: ellipse(632px 550px at -153px);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.right {
+  margin: 86px 8px 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.rightInner {
+  max-width: 774px;
+}
+
+.breadcrumbs {
+  margin-bottom: 24px;
+}
+
+.providerWrapper {
+  width: 174px;
+  aspect-ratio: 7.17 / 1;
+  margin-bottom: 24px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.pixelArtDotsIcon {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 8px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 36px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-family: "Inter", sans-serif;
+}
+
+.subtitleRow {
+  margin-top: 0;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 4px;
+  }
+
+  a {
+    margin-left: 8px;
+    color: #777a80;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.languagesRow {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+}
+
+@media (max-width: breakpoints.$lg) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    filter: none;
+    max-width: 600px;
+    height: 400px;
+    width: 100%;
+    align-self: center;
+    margin-top: 86px;
+
+    .leftInner {
+      clip-path: none;
+    }
+  }
+
+  .right {
+    margin: 48px 0 24px;
+
+    .rightInner {
+      max-width: 1298px;
+    }
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  .providerWrapper {
+    display: none;
+  }
+
+  .pixelArtDotsIcon {
+    display: none;
+  }
+
+  .infoRow {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .left {
+    height: 214px;
+  }
+
+  .right {
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+
+  .title {
+    font-size: 25px;
+    margin-bottom: 8px;
+  }
+
+  .subtitleRow {
+    font-size: 14px;
+    margin-bottom: 11px;
+  }
+
+  .languagesRow {
+    margin-bottom: 19px;
+    font-size: 14px;
+  }
+
+  .infoRow {
+    margin-bottom: 32px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,46 @@
+.savePopover {
+  z-index: 3;
+  padding: 16px 24px;
+  width: 252px;
+}
+
+.savePopoverTitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.savePopoverRadioInputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin-bottom: 36px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  justify-content: flex-end;
+}
+
+.deleteBtn,
+.saveBtn {
+  position: relative;
+  padding: 8px 16px;
+  border: none;
+  line-height: 1.5;
+  cursor: pointer;
+  @include mixins.hoverArea(100%, 48px);
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+.saveBtn {
+  color: #fff;
+  background-color: #ebc500;
+  border-radius: 12px;
+}

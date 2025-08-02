@@ -1,0 +1,80 @@
+.partners {
+  background: #fee16b;
+  font-family: "Inter", sans-serif;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 138px 0 96px 0;
+}
+
+.decor {
+  margin-bottom: 8px;
+}
+
+.title {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.text {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.slider {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.slide {
+  display: flex !important;
+  width: 606px !important;
+  border-radius: 12px;
+  background-color: #fff;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.slideInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  justify-content: space-between;
+  padding: 23px 23px 23px 0;
+}
+
+.slideTexts {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination {
+  display: flex;
+  gap: 9px;
+}
+.paginationMark {
+  border-radius: 12px;
+  width: 16px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease 0s;
+
+  &.active {
+    width: 64px;
+    background-color: var(--text-brand);
+  }
+}
+
+@media (max-width: 640px) {
+  .body {
+    padding-top: 114px;
+    padding-bottom: 32px;
+  }
+  .slider {
+    margin-bottom: 32px;
+  }
+}

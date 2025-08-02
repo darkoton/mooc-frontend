@@ -1,0 +1,78 @@
+.touch {
+  position: relative;
+  background-color: var(--text-brand);
+  z-index: 1;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+.decor {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 62px 0;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 61px;
+
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--surface-primary);
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 24px;
+  color: var(--surface-primary);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @media (any-hover: hover) {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      transform: translateX(2%);
+    }
+  }
+}
+
+.ButtonArrow {
+  flex-shrink: 0;
+  width: 7px;
+  height: 10px;
+  color: var(--white);
+}
+
+@media (max-width: 640px) {
+  .decor {
+    transform: translateX(65%);
+  }
+
+  .body {
+    padding: 57px 0;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 125%;
+    letter-spacing: -0.04em;
+  }
+}

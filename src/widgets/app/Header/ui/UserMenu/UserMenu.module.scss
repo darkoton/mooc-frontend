@@ -1,0 +1,17 @@
+.userMenu {
+  width: 260px;
+}
+
+.hr {
+  height: 1px;
+  color: #f0f1f3;
+  background: #f0f1f3;
+  font-size: 0;
+  border: 0;
+  margin: 0;
+}
+
+.active {
+  background-color: #f0efea;
+  pointer-events: none;
+}

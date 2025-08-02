@@ -1,0 +1,36 @@
+.filters {
+  margin-top: 24px;
+
+  .checkboxesGroup:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.checkboxesGroup {
+  margin-bottom: 40px;
+
+  h5 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+
+  & > p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  & > p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  & > p > span {
+    color: #777a80;
+    font-size: 12px;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,60 @@
+.modal {
+  padding: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.modalInner {
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 40px 56px;
+}
+
+.title {
+  font-size: 27px;
+  letter-spacing: -0.04em;
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.rateRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  column-gap: 6px;
+
+  label {
+    font-weight: 700;
+    align-self: flex-start;
+  }
+}
+
+.input,
+.textArea {
+  padding: 8px 16px;
+  border: 1px solid rgba(63, 71, 82, 0.32);
+  border-radius: 12px;
+  outline: none;
+  line-height: 1.5;
+}
+
+.textArea {
+  width: 100%;
+  resize: none;
+}
+
+.textAreaWrapper {
+}
+
+.counter {
+  opacity: 0.6;
+  margin-left: auto;
+}

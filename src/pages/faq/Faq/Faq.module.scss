@@ -1,0 +1,105 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  height: 100vh;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.topSection {
+  padding-top: 124px;
+  padding-bottom: 48px;
+}
+
+.mainSection {
+  margin-top: 48px;
+  margin-bottom: 96px;
+}
+
+.mainSectionContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+.loadingWrapper {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.errorTxt {
+  color: colors.$error;
+  margin: 0;
+}
+
+.faqCategoryBoxHr {
+  height: 1px;
+  color: #777a80;
+  background: #777a80;
+  font-size: 0;
+  border: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.faqCategoryBox {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 103px;
+}
+
+.faqCategory {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 0;
+  width: 346px;
+  flex-shrink: 0;
+}
+
+.faqItemsContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+
+.faqItemsHr {
+  height: 1px;
+  color: #d9d9d9;
+  background: #d9d9d9;
+  font-size: 0;
+  border: 0;
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: breakpoints.$lg) {
+  .faqCategoryBox {
+    column-gap: 60px;
+  }
+}
+
+@media (max-width: breakpoints.$md) {
+  .faqCategoryBox {
+    flex-direction: column;
+    row-gap: 48px;
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .faqCategoryBox {
+    row-gap: 24px;
+  }
+
+  .faqCategory {
+    font-size: 34px;
+    width: 100%;
+  }
+}

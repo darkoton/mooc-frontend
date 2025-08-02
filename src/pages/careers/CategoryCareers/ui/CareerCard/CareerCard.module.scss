@@ -1,0 +1,90 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 8px 8px 16px;
+  min-width: 0;
+}
+
+.header {
+  height: 200px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.04em;
+  font-size: 27px;
+  @include mixins.lineClamp(2);
+}
+
+.avgSalaryTitle {
+  margin-top: auto;
+  margin-bottom: 8px;
+  color: #3f4752;
+}
+
+.avgSalariesContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.avgSalaryBox {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #777a80;
+  text-decoration: none;
+  color: inherit;
+  height: 48px;
+  font-weight: 700;
+
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .title {
+    font-size: 25px;
+  }
+
+  .avgSalaryTitle {
+    font-size: 14px;
+  }
+}

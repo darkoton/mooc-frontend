@@ -1,0 +1,25 @@
+@mixin hoverArea($width: 40px, $height: 40px) {
+  &::before {
+    content: "";
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin widthFitContent {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@mixin lineClamp($lines) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: $lines;
+  line-clamp: $lines;
+}

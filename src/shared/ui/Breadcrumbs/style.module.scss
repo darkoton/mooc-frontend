@@ -1,0 +1,35 @@
+.breadcrumbs {
+  // display: flex;
+  // align-items: center;
+  // column-gap: 5px;
+  // flex-wrap: wrap;
+}
+
+.link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--text-secondary);
+  margin-right: 5px;
+
+  @media (max-width: 640px) {
+    font-size: 14px;
+  }
+
+  &.active {
+    text-decoration: none;
+    color: var(--text-secondary-light);
+  }
+
+  @media (any-hover: hover) {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: var(--text-secondary);
+      text-decoration: underline;
+    }
+  }
+}

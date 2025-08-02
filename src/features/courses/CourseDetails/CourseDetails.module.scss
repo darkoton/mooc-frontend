@@ -1,0 +1,93 @@
+.detailsSection {
+  margin-bottom: 80px;
+}
+
+.detailsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detailsTitle {
+  margin-top: 0;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 36px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-family: "Inter", sans-serif;
+
+  svg {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.infoBadgesContainer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 48px;
+  row-gap: 8px;
+}
+
+.detailsRightWrapper {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.detailsRight {
+  width: 284px;
+  height: 166px;
+  border: 1px solid #262729;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  border-radius: 12px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: breakpoints.$lg) {
+  .detailsRightWrapper {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: breakpoints.$md) {
+  .detailsContainer {
+    flex-direction: column;
+    row-gap: 48px;
+  }
+
+  .detailsTitle {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 8px;
+    font-size: 34px;
+  }
+
+  .infoBadgesContainer {
+    column-gap: 8px;
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .detailsContainer {
+    row-gap: 24px;
+  }
+
+  .detailsTitle {
+    svg {
+      width: 27px;
+      height: 27px;
+    }
+  }
+}

@@ -1,0 +1,181 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.topSection {
+  padding-top: 96px;
+  padding-bottom: 34px;
+}
+
+.mainSection {
+  padding: 48px 0;
+}
+
+.container {
+  display: flex;
+  column-gap: 24px;
+}
+
+.aside {
+  max-width: 280px;
+  width: 100%;
+  flex-shrink: 0;
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+.asideTitle {
+  font-size: 27px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: colors.$text-primary;
+  margin-top: 0;
+  margin-bottom: 32x;
+}
+
+.mainContent {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.mainContentTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.resultsCount {
+  margin: 0;
+  color: #3f4752;
+}
+
+.pagination {
+  margin-top: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 32px;
+}
+
+.selectCategoryTabletBtn {
+  display: none;
+  align-items: center;
+  column-gap: 8px;
+  color: #3044cc;
+  font-weight: 700;
+  line-height: 1.5;
+  background-color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  margin-left: auto;
+  margin-right: -24px;
+  cursor: pointer;
+  margin-bottom: 24px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+  svg path {
+    fill: #3044cc;
+  }
+}
+
+.selectWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 8px 16px;
+
+  .selectHead {
+    padding: 0;
+  }
+}
+
+.closeSelectCategoryBtn {
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  color: #3044cc;
+  margin-left: auto;
+  margin-bottom: 8px;
+}
+
+.selectCategoryDrawer {
+  width: 400px;
+}
+
+.errText {
+  color: colors.$error;
+}
+
+@media (max-width: breakpoints.$lg) {
+  .aside {
+    display: none;
+  }
+
+  .selectCategoryTabletBtn {
+    display: flex;
+  }
+}
+
+@media (max-width: breakpoints.$md) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .topSection {
+    padding-top: 89px;
+    padding-bottom: 24px;
+  }
+
+  .mainSection {
+    padding: 32px 0;
+  }
+
+  .resultsCount {
+    font-size: 14px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .selectCategoryTabletBtn {
+    margin-right: -16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .mainContentTopRow {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}

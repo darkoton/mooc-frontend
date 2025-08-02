@@ -1,0 +1,188 @@
+.container {
+  position: fixed;
+  z-index: 3;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 1409px;
+  width: 100%;
+  padding: 0 16px;
+  height: 66px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 24px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  height: 66px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.logo svg {
+  margin-top: -1px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  column-gap: 24px;
+  margin-right: 24px;
+
+  li > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  li > div {
+    margin: 0;
+    column-gap: 10px;
+  }
+}
+
+.signInBtn {
+  font-weight: 700;
+  color: #fff;
+  height: 48px;
+  padding: 0 19px;
+  border: none;
+  background-color: colors.$blue;
+  text-transform: uppercase;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.getStartedBtn {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.menuBtn {
+  display: none;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.userMenuBtn {
+  display: grid;
+  place-items: center;
+  background-color: #ededee;
+  padding: 0;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 23px;
+  overflow: hidden;
+
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+}
+
+@supports (
+  (-webkit-backdrop-filter: blur(13px)) or (backdrop-filter: blur(13px))
+) {
+  .header {
+    background-color: rgba(255, 255, 255, 0.47);
+    -webkit-backdrop-filter: blur(13px);
+    backdrop-filter: blur(13px);
+  }
+}
+
+@supports not (
+  (-webkit-backdrop-filter: blur(13px)) or (backdrop-filter: blur(13px))
+) {
+  header {
+    background-color: #fff;
+  }
+}
+
+@media (max-width: breakpoints.$lg) {
+  .header nav {
+    display: none;
+  }
+
+  .signInBtn {
+    display: none;
+  }
+
+  .userMenuBtn {
+    display: none;
+  }
+
+  .menuBtn {
+    display: grid;
+  }
+
+  .langSwitcher {
+    display: none;
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .container {
+    padding: 0 8px;
+  }
+
+  .header {
+    padding: 9px 0;
+  }
+
+  .logo {
+    width: 135px;
+    height: 19px;
+  }
+
+  .getStartedBtn {
+    font-size: 14px;
+    text-transform: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .getStartedBtn {
+    padding: 12px 8px;
+  }
+
+  .arrowRight {
+    display: none;
+  }
+
+  .menuBtn {
+    margin-left: 8px;
+  }
+}

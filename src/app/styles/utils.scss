@@ -1,0 +1,182 @@
+.d-none {
+  display: none;
+}
+
+@media (max-width: breakpoints.$md) {
+  .md-d-flex {
+    display: flex;
+  }
+
+  .md-d-block {
+    display: block;
+  }
+
+  .md-d-none {
+    display: none;
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .sm-d-none {
+    display: none;
+  }
+}
+
+// =============================================
+
+.h2-bold-responsive {
+  margin: 0;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+  text-align: center;
+
+  @media (min-width: 600px) {
+    font-weight: 800;
+    font-size: 61px;
+    letter-spacing: -0.02em;
+  }
+}
+
+.h3-bold-responsive {
+  margin: 0;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+
+  @media (min-width: 600px) {
+    font-size: 47px;
+    line-height: 125%;
+  }
+}
+
+.h4-responsive {
+  margin: 0;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 145%;
+
+  @media (min-width: 600px) {
+    font-size: 35px;
+    line-height: 125%;
+    letter-spacing: -0.04em;
+  }
+}
+
+.h4-bold {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+}
+
+.h4-bold-responsive {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+
+  @media (min-width: 768px) {
+    font-size: 35px;
+  }
+}
+
+.p-responsive {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  @media (min-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+.p-bold {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.p-bold-responsive {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+.small {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+}
+
+.h5-bold-responsive {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+
+  @media (min-width: 1024px) {
+    font-size: 27px;
+  }
+}
+
+.h6 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 145%;
+}
+
+.h6-responsive {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+  }
+}
+
+.p-body-responsive {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+
+  @media (min-width: 1024px) {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondory {
+  color: var(--text-secondary);
+}
+
+.text-second .text-surface-secondary {
+  color: var(--surface-secondary);
+}
+
+.text-secondary-light {
+  color: var(--text-secondary-light);
+}

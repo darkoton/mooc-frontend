@@ -1,0 +1,93 @@
+.testimonials {
+  font-family: "Inter", sans-serif;
+}
+
+.body {
+  padding: 130px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  gap: 9px;
+}
+.paginationMark {
+  border-radius: 12px;
+  width: 16px;
+  height: 6px;
+  background: rgba(47, 46, 65, 0.15);
+  transition: all 0.3s ease 0s;
+
+  &.active {
+    width: 64px;
+    background-color: var(--surface-yellow);
+  }
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  border: 0.76px solid #ececec;
+  border-radius: 12px;
+  background: #fff;
+  padding: 24px;
+  position: relative;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 65px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.role {
+  color: var(--text-secondary-light);
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 72px;
+  max-width: 273px;
+}
+
+.decor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .body {
+    gap: 42px;
+    padding-top: 114px;
+    padding-bottom: 32px;
+  }
+}

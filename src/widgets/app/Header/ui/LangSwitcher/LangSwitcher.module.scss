@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.langBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  opacity: 0.4;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  @include mixins.hoverArea(48px, 48px);
+
+  &.active {
+    color: #2a5bd7;
+    opacity: 0.82;
+    font-weight: 700;
+  }
+}

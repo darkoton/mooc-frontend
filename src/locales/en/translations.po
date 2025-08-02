@@ -1,0 +1,764 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-04-24 17:24+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/widgets/app/Testimonials/index.tsx:25
+#: src/widgets/app/Testimonials/index.tsx:33
+#: src/widgets/app/Testimonials/index.tsx:41
+#: src/widgets/app/Testimonials/index.tsx:49
+#: src/features/courses/CourseReview/CourseReview.tsx:28
+msgid "“Drewl has done so much work with Headless platforms, and we knew the Drewl team was incredibly well-versed in that space.”"
+msgstr "“Drewl has done so much work with Headless platforms, and we knew the Drewl team was incredibly well-versed in that space.”"
+
+#. placeholder {0}: careersCategory.count
+#: src/widgets/app/Header/ui/CareersMenu/CareersMenu.tsx:56
+msgid "{0, plural, one {# Career} few {# Careers} other {# Careers}}"
+msgstr "{0, plural, one {# Career} few {# Careers} other {# Careers}}"
+
+#. placeholder {0}: courses.count
+#: src/pages/courses/Search/Search.tsx:140
+msgid "{0, plural, one {# result} few {# results} other {# results}}"
+msgstr "{0, plural, one {# result} few {# results} other {# results}}"
+
+#. placeholder {0}: 120
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:49
+msgid "{0, plural, one {# Result} few {# Results} other {# Results}}"
+msgstr "{0, plural, one {# Result} few {# Results} other {# Results}}"
+
+#. placeholder {0}: 20
+#. placeholder {0}: 1000
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:102
+#: src/widgets/courses/CourseReviews/CourseReviews.tsx:65
+#: src/features/courses/DiscoverCourses/DiscoverCourses.tsx:43
+msgid "{0, plural, one {# Review} few {# Reviews} other {# Reviews}}"
+msgstr "{0, plural, one {# Review} few {# Reviews} other {# Reviews}}"
+
+#. placeholder {0}: Math.round(weeks)
+#: src/entities/course/hooks/useTransformDuration.tsx:22
+msgid "{0, plural, one {# week} few {# weeks} other {# weeks}}"
+msgstr "{0, plural, one {# week} few {# weeks} other {# weeks}}"
+
+#: src/entities/course/hooks/useTransformDuration.tsx:16
+msgid "{days, plural, one {# day} few {# days} other {# days}}"
+msgstr "{days, plural, one {# day} few {# days} other {# days}}"
+
+#: src/entities/course/hooks/useTransformDuration.tsx:10
+msgid "{hours, plural, one {# hour} few {# hours} other {# hours}}"
+msgstr "{hours, plural, one {# hour} few {# hours} other {# hours}}"
+
+#: src/entities/course/hooks/useTransformDuration.tsx:34
+msgid "{monthes, plural, one {# month} few {# monthes} other {# monthes}}"
+msgstr "{monthes, plural, one {# month} few {# monthes} other {# monthes}}"
+
+#: src/entities/course/hooks/useTransformDuration.tsx:52
+msgid "{monthesRemainder, plural, one {# month} few {# monthes} other {# monthes}}"
+msgstr "{monthesRemainder, plural, one {# month} few {# monthes} other {# monthes}}"
+
+#: src/entities/course/hooks/useTransformDuration.tsx:47
+msgid "{years, plural, one {# year} few {# years} other {# years}}"
+msgstr "{years, plural, one {# year} few {# years} other {# years}}"
+
+#: src/widgets/app/Hero/Hero.tsx:23
+msgid "<0>Find your free study</0> path in Ukraine & beyond"
+msgstr "<0>Find your free study</0> path in Ukraine & beyond"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:114
+msgid "1 to 3 hours"
+msgstr "1 to 3 hours"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:116
+msgid "1-3 months"
+msgstr "1-3 months"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:107
+msgid "1-4 weeks"
+msgstr "1-4 weeks"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:118
+msgid "3 to 6 hours"
+msgstr "3 to 6 hours"
+
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:84
+msgid "A classic building with columns and a red flag"
+msgstr "A classic building with columns and a red flag"
+
+#: src/widgets/app/Hero/Hero.tsx:72
+msgid "A girl wearing a Ukrainian embroidered shirt gives a thumbs up in front of a laptop with a smile"
+msgstr "A girl wearing a Ukrainian embroidered shirt gives a thumbs up in front of a laptop with a smile"
+
+#: src/widgets/app/Hero/Hero.tsx:89
+msgid "A young woman working at a laptop in a modern room, looking at the camera"
+msgstr "A young woman working at a laptop in a modern room, looking at the camera"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:189
+msgid "Abandoned"
+msgstr "Abandoned"
+
+#: src/pages/courses/Course/Course.tsx:33
+msgid "About"
+msgstr "About"
+
+#: src/widgets/app/Partners/index.tsx:57
+msgid "Access special courses and discounts"
+msgstr "Access special courses and discounts"
+
+#: src/widgets/courses/Courses/Courses.tsx:77
+#: src/pages/courses/Search/Search.tsx:53
+msgid "All courses"
+msgstr "All courses"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:146
+msgid "Already have an account?"
+msgstr "Already have an account?"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:129
+msgid "Apply filters"
+msgstr "Apply filters"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:33
+msgid "Art and design"
+msgstr "Art and design"
+
+#: src/pages/blog/BlogItem/BlogItem.tsx:20
+msgid "Article not found"
+msgstr "Article not found"
+
+#: src/pages/careers/CategoryCareers/ui/CareerCard/CareerCard.tsx:35
+msgid "Average salary"
+msgstr "Average salary"
+
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:54
+msgid "Black academic cap with yellow tassel"
+msgstr "Black academic cap with yellow tassel"
+
+#: src/widgets/app/Header/Header.tsx:86
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:78
+#: src/pages/blog/BlogItem/BlogItem.tsx:31
+#: src/pages/blog/Blog/Blog.tsx:25
+#: src/pages/blog/Blog/Blog.tsx:26
+msgid "Blog"
+msgstr "Blog"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:40
+#: src/features/app/SearchFilters/SearchFilters.tsx:26
+msgid "Cancel"
+msgstr "Cancel"
+
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:72
+msgid "Category career"
+msgstr "Category career"
+
+#: src/features/courses/OnlineCourseCard/OnlineCourseCard.tsx:59
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:31
+#: src/features/courses/CourseInfoBadge/CourseInfoBadge.tsx:24
+msgid "Certificate"
+msgstr "Certificate"
+
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:20
+msgid "Choose a path"
+msgstr "Choose a path"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:126
+msgid "Clear filters"
+msgstr "Clear filters"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:15
+msgid "Computer Science"
+msgstr "Computer Science"
+
+#: src/widgets/app/Header/Header.tsx:74
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:68
+#: src/widgets/app/Footer/index.tsx:40
+msgid "Contact"
+msgstr "Contact"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:33
+msgid "Country"
+msgstr "Country"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:39
+msgid "course"
+msgstr "course"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:117
+msgid "Course language"
+msgstr "Course language"
+
+#: src/widgets/app/Header/Header.tsx:59
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:63
+#: src/widgets/app/Footer/index.tsx:34
+msgid "Courses"
+msgstr "Courses"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:29
+msgid "Creative"
+msgstr "Creative"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:19
+msgid "Data Science"
+msgstr "Data Science"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:61
+msgid "Degree type"
+msgstr "Degree type"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:203
+msgid "Delete"
+msgstr "Delete"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:37
+msgid "Design"
+msgstr "Design"
+
+#: src/features/courses/CourseDetails/CourseDetails.tsx:44
+msgid "Details program"
+msgstr "Details program"
+
+#: src/widgets/app/Header/Header.tsx:68
+#: src/widgets/app/Footer/index.tsx:37
+msgid "Discover careers"
+msgstr "Discover careers"
+
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:60
+msgid "Discover universities"
+msgstr "Discover universities"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:76
+msgid "Doctoral Degrees"
+msgstr "Doctoral Degrees"
+
+#: src/widgets/auth/LoginForm/LoginForm.tsx:98
+msgid "Don't have an account?"
+msgstr "Don't have an account?"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:94
+#: src/features/courses/CourseInfoBadge/CourseInfoBadge.tsx:26
+#: src/features/app/SearchFilters/SearchFilters.tsx:111
+msgid "Duration"
+msgstr "Duration"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:57
+msgid "Education"
+msgstr "Education"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:67
+#: src/widgets/auth/LoginForm/LoginForm.tsx:50
+msgid "Email"
+msgstr "Email"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:51
+msgid "Engineering"
+msgstr "Engineering"
+
+#: src/widgets/courses/CourseTopSection/hooks/useTranslatedLanguage.ts:14
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:50
+#: src/features/app/SearchFilters/SearchFilters.tsx:86
+#: src/entities/course/hooks/useCourseLanguageLabel.tsx:9
+msgid "English"
+msgstr "English"
+
+#: src/widgets/app/Header/ui/CareersMenu/CareersMenu.tsx:31
+msgid "Explore career categories"
+msgstr "Explore career categories"
+
+#: src/widgets/courses/Courses/hooks/useBreadcrumbs.ts:15
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:30
+msgid "Explore courses"
+msgstr "Explore courses"
+
+#: src/widgets/courses/Courses/Courses.tsx:40
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:53
+msgid "Explore topics"
+msgstr "Explore topics"
+
+#: src/widgets/app/Header/Header.tsx:80
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:73
+#: src/widgets/app/Footer/index.tsx:43
+msgid "Faq"
+msgstr "Faq"
+
+#: src/pages/faq/Faq/Faq.tsx:69
+msgid "FaqPageTitle"
+msgstr "Most frequently asked questions"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:79
+msgid "Favorite"
+msgstr "Favorite"
+
+#: src/pages/courses/Search/Search.tsx:120
+msgid "Filter"
+msgstr "Filter"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:73
+#: src/features/app/SearchFilters/SearchFilters.tsx:23
+msgid "Filters"
+msgstr "Filters"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:123
+msgid "Finished"
+msgstr "Finished"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:80
+msgid "First name"
+msgstr "First name"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:97
+msgid "Format"
+msgstr "Format"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:74
+msgid "Free"
+msgstr "Free"
+
+#: src/widgets/courses/CourseTopSection/hooks/useGetPrice.ts:11
+#: src/features/courses/CourseDetails/hooks/useGetPrice.ts:11
+msgid "Free course"
+msgstr "Free"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:158
+msgid "Get financing"
+msgstr "Get financing"
+
+#: src/widgets/app/Touch/index.tsx:24
+msgid "Get in contact with our client services"
+msgstr "Get in contact with our client services"
+
+#: src/widgets/app/Touch/index.tsx:21
+msgid "Get in touch"
+msgstr "Get in touch"
+
+#: src/widgets/app/Header/Header.tsx:113
+msgid "Get Started"
+msgstr "Get Started"
+
+#: src/widgets/app/Touch/index.tsx:29
+msgid "GET STARTED"
+msgstr "GET STARTED"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:63
+#: src/features/app/SearchFilters/SearchFilters.tsx:72
+msgid "Graduate Degrees"
+msgstr "Graduate Degrees"
+
+#: src/widgets/app/Header/Header.tsx:53
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:58
+#: src/widgets/app/Footer/index.tsx:31
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:68
+#: src/pages/careers/Career/Career.tsx:20
+msgid "Home"
+msgstr "Home"
+
+#: src/widgets/courses/Courses/hooks/useBreadcrumbs.ts:11
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:35
+#: src/pages/courses/Search/Search.tsx:49
+msgid "Homepage"
+msgstr "Homepage"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:60
+#: src/features/courses/CourseDetails/CourseDetails.tsx:32
+#: src/entities/course/hooks/useStudyFormatLabel.tsx:15
+msgid "Hybrid"
+msgstr "Hybrid"
+
+#: src/features/courses/CourseDetails/CourseDetails.tsx:75
+msgid "Illustration of online learning and education tools"
+msgstr "Illustration of online learning and education tools"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:40
+msgid "International"
+msgstr "International"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:15
+#: src/widgets/auth/LoginForm/LoginForm.tsx:55
+msgid "Invalid email address"
+msgstr "Invalid email address"
+
+#: src/widgets/app/Partners/index.tsx:29
+msgid "Kharkiv"
+msgstr "Kharkiv"
+
+#: src/widgets/app/Partners/index.tsx:24
+msgid "Kyiv"
+msgstr "Kyiv"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:46
+#: src/features/app/SearchFilters/SearchFilters.tsx:83
+msgid "Language"
+msgstr "Language"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:92
+msgid "Last name"
+msgstr "Last name"
+
+#: src/pages/careers/CategoryCareers/ui/CareerCard/CareerCard.tsx:50
+msgid "Learn more"
+msgstr "Learn more"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:98
+msgid "Less than 1 week"
+msgstr "Less than 1 week"
+
+#: src/widgets/auth/LoginForm/LoginForm.tsx:44
+#: src/widgets/auth/LoginForm/LoginForm.tsx:91
+msgid "Log In"
+msgstr "Log In"
+
+#: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:60
+msgid "Logout"
+msgstr "Logout"
+
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:23
+msgid "Looking for a specific course or university? Choose your path"
+msgstr "Looking for a specific course or university? Choose your path"
+
+#: src/widgets/app/Partners/index.tsx:34
+msgid "Lviv"
+msgstr "Lviv"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:47
+msgid "Machinery"
+msgstr "Machinery"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:26
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:37
+msgid "Maximum length 150 characters"
+msgstr "Maximum length 150 characters"
+
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:34
+msgid "Menu"
+msgstr "Menu"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:22
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:33
+msgid "Minimum length 2 characters"
+msgstr "Minimum length 2 characters"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:44
+msgid "Minimum length 8 characters"
+msgstr "Minimum length 8 characters"
+
+#: src/features/courses/CourseInfoBadge/CourseInfoBadge.tsx:25
+msgid "Mode"
+msgstr "Mode"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:125
+msgid "More than 3 months"
+msgstr "More than 3 months"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:62
+#: src/pages/courses/Search/Search.tsx:129
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:89
+msgid "Most popular"
+msgstr "Most popular"
+
+#: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:38
+msgid "My courses"
+msgstr "My courses"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:61
+msgid "Natural science"
+msgstr "Natural science"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:61
+#: src/pages/courses/Search/Search.tsx:130
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:88
+msgid "Newest"
+msgstr "Newest"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:126
+#: src/features/courses/CourseDetails/CourseDetails.tsx:50
+msgid "No"
+msgstr "No"
+
+#: src/pages/courses/Search/Search.tsx:157
+msgid "No search results"
+msgstr "No search results"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:64
+msgid "Non-Degree Programs"
+msgstr "Non-Degree Programs"
+
+#: src/entities/course/hooks/useStudyFormatLabel.tsx:17
+#: src/entities/course/hooks/useCourseLanguageLabel.tsx:15
+msgid "Not specified"
+msgstr "Not specified"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:56
+#: src/features/courses/CourseDetails/CourseDetails.tsx:28
+#: src/entities/course/hooks/useStudyFormatLabel.tsx:13
+msgid "Offline"
+msgstr "Offline"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:104
+msgid "On campus"
+msgstr "On campus"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:52
+#: src/features/courses/CourseDetails/CourseDetails.tsx:24
+#: src/features/app/SearchFilters/SearchFilters.tsx:100
+#: src/entities/course/hooks/useStudyFormatLabel.tsx:11
+msgid "Online"
+msgstr "Online"
+
+#: src/widgets/courses/SearchResults/SearchResults.tsx:13
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:79
+msgid "Online courses"
+msgstr "Online courses"
+
+#: src/widgets/app/Partners/index.tsx:53
+msgid "Our partners"
+msgstr "Our partners"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:83
+msgid "Paid"
+msgstr "Paid"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:104
+#: src/widgets/auth/LoginForm/LoginForm.tsx:69
+msgid "Password"
+msgstr "Password"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:48
+msgid "Password is entirely numeric"
+msgstr "Password is entirely numeric"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:181
+msgid "Planned"
+msgstr "Planned"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:70
+msgid "Price"
+msgstr "Price"
+
+#: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:35
+msgid "Profile"
+msgstr "Profile"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:23
+msgid "Programming"
+msgstr "Programming"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:118
+msgid "Repeat password"
+msgstr "Repeat password"
+
+#: src/widgets/courses/Courses/Courses.tsx:151
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:137
+#: src/pages/courses/Search/Search.tsx:209
+msgid "Return"
+msgstr "Return"
+
+#: src/pages/courses/Course/Course.tsx:37
+msgid "Reviews"
+msgstr "Reviews"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:207
+msgid "Save"
+msgstr "Save"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:70
+msgid "Save as"
+msgstr "Save as"
+
+#: src/pages/courses/Search/Search.tsx:92
+msgid "Search"
+msgstr "Search"
+
+#: src/widgets/courses/Courses/Courses.tsx:43
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:56
+#: src/widgets/app/Hero/Hero.tsx:28
+#: src/pages/courses/Search/Search.tsx:93
+msgid "Search 15 000+ no‑cost learning opportunities worldwide"
+msgstr "Search 15 000+ no‑cost learning opportunities worldwide"
+
+#: src/widgets/app/PageTopSection/PageTopSection.tsx:54
+#: src/features/courses/RedirectSearch/RedirectSearch.tsx:24
+msgid "Search 15 000+ no‑cost learning..."
+msgstr "Search 15 000+ no‑cost learning..."
+
+#: src/widgets/courses/Courses/Courses.tsx:80
+#: src/widgets/courses/Courses/Courses.tsx:109
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:96
+msgid "See all"
+msgstr "See all"
+
+#: src/widgets/app/Header/ui/CareersMenu/CareersMenu.tsx:39
+msgid "Show all categories"
+msgstr "Show all categories"
+
+#: src/widgets/app/Header/ui/CareersMenu/CareersMenu.tsx:37
+msgid "Show fewer categories"
+msgstr "Show fewer categories"
+
+#: src/widgets/app/Header/Header.tsx:108
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:42
+msgid "Sign in"
+msgstr "Sign in"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:139
+msgid "Sign Up"
+msgstr "Sign Up"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:62
+msgid "Signing Up"
+msgstr "Signing Up"
+
+#: src/widgets/app/Hero/Hero.tsx:106
+msgid "Smiling graduates in gowns and confederate caps hold their diplomas after the ceremony"
+msgstr "Smiling graduates in gowns and confederate caps hold their diplomas after the ceremony"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:65
+msgid "Social science"
+msgstr "Social science"
+
+#: src/pages/courses/Search/Search.tsx:125
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:84
+msgid "Sort by:"
+msgstr "Sort by:"
+
+#: src/widgets/courses/CourseTopSection/hooks/useTranslatedLanguage.ts:20
+#: src/entities/course/hooks/useCourseLanguageLabel.tsx:13
+msgid "Spanish"
+msgstr "Spanish"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:87
+msgid "Started"
+msgstr "Started"
+
+#: src/widgets/app/Testimonials/index.tsx:24
+#: src/widgets/app/Testimonials/index.tsx:32
+#: src/widgets/app/Testimonials/index.tsx:40
+#: src/widgets/app/Testimonials/index.tsx:48
+#: src/features/courses/CourseReview/CourseReview.tsx:22
+msgid "Student"
+msgstr "Student"
+
+#: src/widgets/courses/CourseReviews/CourseReviews.tsx:24
+msgid "Student Stories"
+msgstr "Student Stories"
+
+#: src/widgets/app/Testimonials/index.tsx:72
+msgid "STUDENT STORIES"
+msgstr "STUDENT STORIES"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:41
+msgid "Style and beauty"
+msgstr "Style and beauty"
+
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:40
+msgid "Successfully registered"
+msgstr "Successfully registered"
+
+#: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:46
+msgid "Support"
+msgstr "Support"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:168
+msgid "Supported formats: <0>jpg, jpeg, png, webp, pdf</0>"
+msgstr "Supported formats: <0>jpg, jpeg, png, webp, pdf</0>"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:12
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:19
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:30
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:41
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:52
+#: src/widgets/auth/LoginForm/LoginForm.tsx:52
+#: src/widgets/auth/LoginForm/LoginForm.tsx:73
+msgid "This field is required"
+msgstr "This field is required"
+
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:61
+msgid "This password is too common"
+msgstr "This password is too common"
+
+#: src/widgets/courses/Courses/Courses.tsx:63
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:76
+#: src/features/courses/SelectCategory/SelectCategory.tsx:18
+msgid "Topics"
+msgstr "Topics"
+
+#: src/features/courses/CourseInfoBadge/CourseInfoBadge.tsx:27
+msgid "Tuition"
+msgstr "Tuition"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:36
+msgid "Ukraine"
+msgstr "Ukraine"
+
+#: src/widgets/courses/CourseTopSection/hooks/useTranslatedLanguage.ts:17
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:59
+#: src/features/app/SearchFilters/SearchFilters.tsx:90
+#: src/entities/course/hooks/useCourseLanguageLabel.tsx:11
+msgid "Ukrainian"
+msgstr "Ukrainian"
+
+#: src/widgets/auth/LoginForm/hooks/useHandleSubmit.ts:41
+msgid "Unable to log in with provided credentials"
+msgstr "Unable to log in with provided credentials"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:68
+msgid "Undergraduate Degrees"
+msgstr "Undergraduate Degrees"
+
+#: src/widgets/courses/Courses/Courses.tsx:68
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:81
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:49
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:56
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:65
+#: src/widgets/auth/LoginForm/hooks/useHandleSubmit.ts:44
+#: src/pages/faq/Faq/Faq.tsx:32
+#: src/pages/courses/Search/Search.tsx:151
+#: src/pages/courses/Course/Course.tsx:48
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:35
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:213
+msgid "Unexpected error occured. Please try again later"
+msgstr "Unexpected error occured. Please try again later"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:47
+msgid "University"
+msgstr "University"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:84
+msgid "University courses"
+msgstr "University courses"
+
+#: src/widgets/app/Partners/index.tsx:98
+msgid "University of"
+msgstr "University of"
+
+#: src/widgets/universityPrograms/SearchResults/SearchResults.tsx:14
+msgid "Univesity courses"
+msgstr "Univesity courses"
+
+#: src/widgets/app/Header/Header.tsx:100
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:49
+msgid "User"
+msgstr "User"
+
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:54
+msgid "User with that email already exist"
+msgstr "User with that email already exist"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:35
+msgid "With certificate"
+msgstr "With certificate"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:126
+#: src/features/courses/CourseDetails/CourseDetails.tsx:50
+msgid "Yes"
+msgstr "Yes"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:55
+msgid "Your passwords do no match"
+msgstr "Your passwords do no match"

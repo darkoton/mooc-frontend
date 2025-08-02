@@ -1,0 +1,36 @@
+.modal {
+  padding: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.modalInner {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 389px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #ebc500;
+  border-radius: 12px;
+  text-decoration: none;
+}

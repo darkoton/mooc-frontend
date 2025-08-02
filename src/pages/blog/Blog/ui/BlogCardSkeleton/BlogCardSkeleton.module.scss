@@ -1,0 +1,27 @@
+.article {
+  background-color: #fff;
+}
+
+.cardHeader {
+  min-height: 200px;
+}
+
+.cardBody {
+  padding: 16px;
+}
+
+.title {
+  height: 27px;
+
+  @media (max-width: breakpoints.$sm) {
+    height: 24px;
+  }
+}
+
+.description {
+  height: 16px;
+
+  @media (max-width: breakpoints.$sm) {
+    height: 14px;
+  }
+}

@@ -1,0 +1,30 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.topSection {
+  padding-top: 172px;
+  padding-bottom: 50px;
+}
+
+.mainSection {
+  margin: 48px 0;
+}
+
+@media (max-width: breakpoints.$sm) {
+  .topSection {
+    padding-top: 108px;
+    padding-bottom: 56px;
+  }
+
+  .mainSection {
+    margin: 24px 0;
+  }
+}

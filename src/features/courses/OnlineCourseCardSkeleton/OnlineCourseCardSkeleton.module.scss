@@ -1,0 +1,35 @@
+.article {
+  max-width: 400px;
+  min-width: 260px;
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.img {
+  border-radius: 8px;
+  max-width: 384px;
+  aspect-ratio: 1.76 / 1;
+  background-color: #d9d9d9;
+  margin-bottom: 16px;
+}
+
+.providerRow {
+  height: 16px;
+  width: 80%;
+  background-color: #d9d9d9;
+  margin-bottom: 4px;
+}
+
+.title {
+  height: 24px;
+  background-color: #d9d9d9;
+  margin-bottom: 49px;
+}
+
+.bottomRow {
+  width: 90%;
+  background-color: #d9d9d9;
+  height: 16px;
+}

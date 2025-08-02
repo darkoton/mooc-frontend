@@ -1,0 +1,764 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-04-24 17:24+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: uk\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/widgets/app/Testimonials/index.tsx:25
+#: src/widgets/app/Testimonials/index.tsx:33
+#: src/widgets/app/Testimonials/index.tsx:41
+#: src/widgets/app/Testimonials/index.tsx:49
+#: src/features/courses/CourseReview/CourseReview.tsx:28
+msgid "“Drewl has done so much work with Headless platforms, and we knew the Drewl team was incredibly well-versed in that space.”"
+msgstr "“Дрюл виконав так багато роботи з платформами Headless, і ми знали, що команда Дрюла неймовірно добре обізнана в цій галузі.”"
+
+#. placeholder {0}: careersCategory.count
+#: src/widgets/app/Header/ui/CareersMenu/CareersMenu.tsx:56
+msgid "{0, plural, one {# Career} few {# Careers} other {# Careers}}"
+msgstr "{0, plural, one {# Кар'єра} few {# Кар'єри} other {# Кар'єр}}"
+
+#. placeholder {0}: courses.count
+#: src/pages/courses/Search/Search.tsx:140
+msgid "{0, plural, one {# result} few {# results} other {# results}}"
+msgstr "{0, plural, one {# результат} few {# результати} other {# результатів}}"
+
+#. placeholder {0}: 120
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:49
+msgid "{0, plural, one {# Result} few {# Results} other {# Results}}"
+msgstr "{0, plural, one {# Результат} few {# Результати} other {# Результатів}}"
+
+#. placeholder {0}: 20
+#. placeholder {0}: 1000
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:102
+#: src/widgets/courses/CourseReviews/CourseReviews.tsx:65
+#: src/features/courses/DiscoverCourses/DiscoverCourses.tsx:43
+msgid "{0, plural, one {# Review} few {# Reviews} other {# Reviews}}"
+msgstr "{0, plural, one {# Відгук} few {# Відгуки} other {# Відгуків}}"
+
+#. placeholder {0}: Math.round(weeks)
+#: src/entities/course/hooks/useTransformDuration.tsx:22
+msgid "{0, plural, one {# week} few {# weeks} other {# weeks}}"
+msgstr "{0, plural, one {# тиждень} few {# тижні} other {# тижнів}}"
+
+#: src/entities/course/hooks/useTransformDuration.tsx:16
+msgid "{days, plural, one {# day} few {# days} other {# days}}"
+msgstr "{days, plural, one {# день} few {# дні} other {# днів}}"
+
+#: src/entities/course/hooks/useTransformDuration.tsx:10
+msgid "{hours, plural, one {# hour} few {# hours} other {# hours}}"
+msgstr "{hours, plural, one {# година} few {# години} other {# годин}}"
+
+#: src/entities/course/hooks/useTransformDuration.tsx:34
+msgid "{monthes, plural, one {# month} few {# monthes} other {# monthes}}"
+msgstr "{monthes, plural, one {# місяць} few {# місяці} other {# місяців}}"
+
+#: src/entities/course/hooks/useTransformDuration.tsx:52
+msgid "{monthesRemainder, plural, one {# month} few {# monthes} other {# monthes}}"
+msgstr "{monthesRemainder, plural, one {# місяць} few {# місяці} other {# місяців}}"
+
+#: src/entities/course/hooks/useTransformDuration.tsx:47
+msgid "{years, plural, one {# year} few {# years} other {# years}}"
+msgstr "{years, plural, one {# рік} few {# роки} other {# років}}"
+
+#: src/widgets/app/Hero/Hero.tsx:23
+msgid "<0>Find your free study</0> path in Ukraine & beyond"
+msgstr "<0>Безкоштовне навчання</0> в Україні, за її межами"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:114
+msgid "1 to 3 hours"
+msgstr "1-3 години"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:116
+msgid "1-3 months"
+msgstr "1-3 місяці"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:107
+msgid "1-4 weeks"
+msgstr "1-4 тижні"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:118
+msgid "3 to 6 hours"
+msgstr "3-6 годин"
+
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:84
+msgid "A classic building with columns and a red flag"
+msgstr "Класична будівля з колонами та червоним прапором"
+
+#: src/widgets/app/Hero/Hero.tsx:72
+msgid "A girl wearing a Ukrainian embroidered shirt gives a thumbs up in front of a laptop with a smile"
+msgstr "Дівчина в українській вишиванці з посмішкою показує палець вгору перед ноутбуком"
+
+#: src/widgets/app/Hero/Hero.tsx:89
+msgid "A young woman working at a laptop in a modern room, looking at the camera"
+msgstr "Молода жінка працює за ноутбуком у сучасному приміщенні, дивиться в камеру"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:189
+msgid "Abandoned"
+msgstr ""
+
+#: src/pages/courses/Course/Course.tsx:33
+msgid "About"
+msgstr "Інформація"
+
+#: src/widgets/app/Partners/index.tsx:57
+msgid "Access special courses and discounts"
+msgstr "Отримайте доступ до спеціальних курсів та знижок"
+
+#: src/widgets/courses/Courses/Courses.tsx:77
+#: src/pages/courses/Search/Search.tsx:53
+msgid "All courses"
+msgstr "Всі курси"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:146
+msgid "Already have an account?"
+msgstr "Вже маєте аккаунт?"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:129
+msgid "Apply filters"
+msgstr "Застосувати фільтри"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:33
+msgid "Art and design"
+msgstr "Мистецтво та дизайн"
+
+#: src/pages/blog/BlogItem/BlogItem.tsx:20
+msgid "Article not found"
+msgstr "Блог не знайдено"
+
+#: src/pages/careers/CategoryCareers/ui/CareerCard/CareerCard.tsx:35
+msgid "Average salary"
+msgstr "Середня зарплата"
+
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:54
+msgid "Black academic cap with yellow tassel"
+msgstr "Чорна академічна шапка з жовтим китичком"
+
+#: src/widgets/app/Header/Header.tsx:86
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:78
+#: src/pages/blog/BlogItem/BlogItem.tsx:31
+#: src/pages/blog/Blog/Blog.tsx:25
+#: src/pages/blog/Blog/Blog.tsx:26
+msgid "Blog"
+msgstr "Блог"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:40
+#: src/features/app/SearchFilters/SearchFilters.tsx:26
+msgid "Cancel"
+msgstr "Відміна"
+
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:72
+msgid "Category career"
+msgstr "Кар'єри категорії"
+
+#: src/features/courses/OnlineCourseCard/OnlineCourseCard.tsx:59
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:31
+#: src/features/courses/CourseInfoBadge/CourseInfoBadge.tsx:24
+msgid "Certificate"
+msgstr "Сертифікат"
+
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:20
+msgid "Choose a path"
+msgstr "Оберіть шлях"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:126
+msgid "Clear filters"
+msgstr "Очистити фільтри"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:15
+msgid "Computer Science"
+msgstr "Комп'ютерні науки"
+
+#: src/widgets/app/Header/Header.tsx:74
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:68
+#: src/widgets/app/Footer/index.tsx:40
+msgid "Contact"
+msgstr "Контакти"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:33
+msgid "Country"
+msgstr "Країна"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:39
+msgid "course"
+msgstr "курс"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:117
+msgid "Course language"
+msgstr "Мова курсу"
+
+#: src/widgets/app/Header/Header.tsx:59
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:63
+#: src/widgets/app/Footer/index.tsx:34
+msgid "Courses"
+msgstr "Курси"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:29
+msgid "Creative"
+msgstr "Креатив"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:19
+msgid "Data Science"
+msgstr "Наука про дані"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:61
+msgid "Degree type"
+msgstr "Тип освіти"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:203
+msgid "Delete"
+msgstr ""
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:37
+msgid "Design"
+msgstr "Дизайн"
+
+#: src/features/courses/CourseDetails/CourseDetails.tsx:44
+msgid "Details program"
+msgstr "Деталі програми"
+
+#: src/widgets/app/Header/Header.tsx:68
+#: src/widgets/app/Footer/index.tsx:37
+msgid "Discover careers"
+msgstr "Про кар'єри"
+
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:60
+msgid "Discover universities"
+msgstr "Обрати університети"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:76
+msgid "Doctoral Degrees"
+msgstr "Доктор наук"
+
+#: src/widgets/auth/LoginForm/LoginForm.tsx:98
+msgid "Don't have an account?"
+msgstr "Немаєте аккаунту?"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:94
+#: src/features/courses/CourseInfoBadge/CourseInfoBadge.tsx:26
+#: src/features/app/SearchFilters/SearchFilters.tsx:111
+msgid "Duration"
+msgstr "Тривалість"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:57
+msgid "Education"
+msgstr "Освіта"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:67
+#: src/widgets/auth/LoginForm/LoginForm.tsx:50
+msgid "Email"
+msgstr "Ел. пошта"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:51
+msgid "Engineering"
+msgstr "Інженерія"
+
+#: src/widgets/courses/CourseTopSection/hooks/useTranslatedLanguage.ts:14
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:50
+#: src/features/app/SearchFilters/SearchFilters.tsx:86
+#: src/entities/course/hooks/useCourseLanguageLabel.tsx:9
+msgid "English"
+msgstr "Англійська"
+
+#: src/widgets/app/Header/ui/CareersMenu/CareersMenu.tsx:31
+msgid "Explore career categories"
+msgstr "Категорії кар'єр"
+
+#: src/widgets/courses/Courses/hooks/useBreadcrumbs.ts:15
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:30
+msgid "Explore courses"
+msgstr "Обрати курси"
+
+#: src/widgets/courses/Courses/Courses.tsx:40
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:53
+msgid "Explore topics"
+msgstr "Дослідити теми"
+
+#: src/widgets/app/Header/Header.tsx:80
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:73
+#: src/widgets/app/Footer/index.tsx:43
+msgid "Faq"
+msgstr "Faq"
+
+#: src/pages/faq/Faq/Faq.tsx:69
+msgid "FaqPageTitle"
+msgstr "Найпоширеніші запитання"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:79
+msgid "Favorite"
+msgstr ""
+
+#: src/pages/courses/Search/Search.tsx:120
+msgid "Filter"
+msgstr "Фільтр"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:73
+#: src/features/app/SearchFilters/SearchFilters.tsx:23
+msgid "Filters"
+msgstr "Фільтри"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:123
+msgid "Finished"
+msgstr ""
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:80
+msgid "First name"
+msgstr "Ім'я"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:97
+msgid "Format"
+msgstr "Формат"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:74
+msgid "Free"
+msgstr "Безкоштовні"
+
+#: src/widgets/courses/CourseTopSection/hooks/useGetPrice.ts:11
+#: src/features/courses/CourseDetails/hooks/useGetPrice.ts:11
+msgid "Free course"
+msgstr "Безкоштовно"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:158
+msgid "Get financing"
+msgstr "Отримати фінансування"
+
+#: src/widgets/app/Touch/index.tsx:24
+msgid "Get in contact with our client services"
+msgstr "Зв'яжіться з нашою службою підтримки клієнтів"
+
+#: src/widgets/app/Touch/index.tsx:21
+msgid "Get in touch"
+msgstr "Зв'яжіться з нами"
+
+#: src/widgets/app/Header/Header.tsx:113
+msgid "Get Started"
+msgstr "Почати"
+
+#: src/widgets/app/Touch/index.tsx:29
+msgid "GET STARTED"
+msgstr "ПОЧАТИ"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:63
+#: src/features/app/SearchFilters/SearchFilters.tsx:72
+msgid "Graduate Degrees"
+msgstr "Graduate Degrees"
+
+#: src/widgets/app/Header/Header.tsx:53
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:58
+#: src/widgets/app/Footer/index.tsx:31
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:68
+#: src/pages/careers/Career/Career.tsx:20
+msgid "Home"
+msgstr "Головна"
+
+#: src/widgets/courses/Courses/hooks/useBreadcrumbs.ts:11
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:35
+#: src/pages/courses/Search/Search.tsx:49
+msgid "Homepage"
+msgstr "Головна"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:60
+#: src/features/courses/CourseDetails/CourseDetails.tsx:32
+#: src/entities/course/hooks/useStudyFormatLabel.tsx:15
+msgid "Hybrid"
+msgstr "Гібрид"
+
+#: src/features/courses/CourseDetails/CourseDetails.tsx:75
+msgid "Illustration of online learning and education tools"
+msgstr "Ілюстрація інструментів онлайн-навчання та освіти"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:40
+msgid "International"
+msgstr "Інші країни"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:15
+#: src/widgets/auth/LoginForm/LoginForm.tsx:55
+msgid "Invalid email address"
+msgstr "Невалідна адреса ел. пошти"
+
+#: src/widgets/app/Partners/index.tsx:29
+msgid "Kharkiv"
+msgstr "Харківа"
+
+#: src/widgets/app/Partners/index.tsx:24
+msgid "Kyiv"
+msgstr "Києва"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:46
+#: src/features/app/SearchFilters/SearchFilters.tsx:83
+msgid "Language"
+msgstr "Мова"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:92
+msgid "Last name"
+msgstr "Прізвище"
+
+#: src/pages/careers/CategoryCareers/ui/CareerCard/CareerCard.tsx:50
+msgid "Learn more"
+msgstr "Дізнатися більше"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:98
+msgid "Less than 1 week"
+msgstr "До одного тижня"
+
+#: src/widgets/auth/LoginForm/LoginForm.tsx:44
+#: src/widgets/auth/LoginForm/LoginForm.tsx:91
+msgid "Log In"
+msgstr "Вхід"
+
+#: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:60
+msgid "Logout"
+msgstr "Вийти"
+
+#: src/widgets/app/ChoosePath/ChoosePath.tsx:23
+msgid "Looking for a specific course or university? Choose your path"
+msgstr "Шукаєте конкретний курс або університет? Оберіть свій шлях"
+
+#: src/widgets/app/Partners/index.tsx:34
+msgid "Lviv"
+msgstr "Львова"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:47
+msgid "Machinery"
+msgstr "Машинерія"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:26
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:37
+msgid "Maximum length 150 characters"
+msgstr "Макс. довжина 150 символів"
+
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:34
+msgid "Menu"
+msgstr "Меню"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:22
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:33
+msgid "Minimum length 2 characters"
+msgstr "Мін. довжина 2 символи"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:44
+msgid "Minimum length 8 characters"
+msgstr "Мін. довжина 8 символів"
+
+#: src/features/courses/CourseInfoBadge/CourseInfoBadge.tsx:25
+msgid "Mode"
+msgstr "Режим"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:125
+msgid "More than 3 months"
+msgstr "Більше 3 місяців"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:62
+#: src/pages/courses/Search/Search.tsx:129
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:89
+msgid "Most popular"
+msgstr "Популярності"
+
+#: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:38
+msgid "My courses"
+msgstr "Мої курси"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:61
+msgid "Natural science"
+msgstr "Природничі науки"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:61
+#: src/pages/courses/Search/Search.tsx:130
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:88
+msgid "Newest"
+msgstr "Даті створення"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:126
+#: src/features/courses/CourseDetails/CourseDetails.tsx:50
+msgid "No"
+msgstr "Ні"
+
+#: src/pages/courses/Search/Search.tsx:157
+msgid "No search results"
+msgstr "Немає результатів пошуку"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:64
+msgid "Non-Degree Programs"
+msgstr "Без диплому"
+
+#: src/entities/course/hooks/useStudyFormatLabel.tsx:17
+#: src/entities/course/hooks/useCourseLanguageLabel.tsx:15
+msgid "Not specified"
+msgstr "Не вказано"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:56
+#: src/features/courses/CourseDetails/CourseDetails.tsx:28
+#: src/entities/course/hooks/useStudyFormatLabel.tsx:13
+msgid "Offline"
+msgstr "Офлайн"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:104
+msgid "On campus"
+msgstr "Офлайн"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:52
+#: src/features/courses/CourseDetails/CourseDetails.tsx:24
+#: src/features/app/SearchFilters/SearchFilters.tsx:100
+#: src/entities/course/hooks/useStudyFormatLabel.tsx:11
+msgid "Online"
+msgstr "Онлайн"
+
+#: src/widgets/courses/SearchResults/SearchResults.tsx:13
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:79
+msgid "Online courses"
+msgstr "Онлайн курси"
+
+#: src/widgets/app/Partners/index.tsx:53
+msgid "Our partners"
+msgstr "Наші партнери"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:83
+msgid "Paid"
+msgstr "Платні"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:104
+#: src/widgets/auth/LoginForm/LoginForm.tsx:69
+msgid "Password"
+msgstr "Пароль"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:48
+msgid "Password is entirely numeric"
+msgstr "Пароль не може складатися тільки з цифр"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:181
+msgid "Planned"
+msgstr ""
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:70
+msgid "Price"
+msgstr "Ціна"
+
+#: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:35
+msgid "Profile"
+msgstr "Профіль"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:23
+msgid "Programming"
+msgstr "Програмування"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:118
+msgid "Repeat password"
+msgstr "Повторіть пароль"
+
+#: src/widgets/courses/Courses/Courses.tsx:151
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:137
+#: src/pages/courses/Search/Search.tsx:209
+msgid "Return"
+msgstr "Повернутися"
+
+#: src/pages/courses/Course/Course.tsx:37
+msgid "Reviews"
+msgstr "Відгуки"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:207
+msgid "Save"
+msgstr ""
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:70
+msgid "Save as"
+msgstr ""
+
+#: src/pages/courses/Search/Search.tsx:92
+msgid "Search"
+msgstr "Пошук"
+
+#: src/widgets/courses/Courses/Courses.tsx:43
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:56
+#: src/widgets/app/Hero/Hero.tsx:28
+#: src/pages/courses/Search/Search.tsx:93
+msgid "Search 15 000+ no‑cost learning opportunities worldwide"
+msgstr "Шукайте 15 000+ безкоштовних курсів по всьому світу"
+
+#: src/widgets/app/PageTopSection/PageTopSection.tsx:54
+#: src/features/courses/RedirectSearch/RedirectSearch.tsx:24
+msgid "Search 15 000+ no‑cost learning..."
+msgstr "Шукайте 15 000+ безкоштовних курсів..."
+
+#: src/widgets/courses/Courses/Courses.tsx:80
+#: src/widgets/courses/Courses/Courses.tsx:109
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:96
+msgid "See all"
+msgstr "Всі"
+
+#: src/widgets/app/Header/ui/CareersMenu/CareersMenu.tsx:39
+msgid "Show all categories"
+msgstr "Показати всі категорії"
+
+#: src/widgets/app/Header/ui/CareersMenu/CareersMenu.tsx:37
+msgid "Show fewer categories"
+msgstr "Показати менше категорій"
+
+#: src/widgets/app/Header/Header.tsx:108
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:42
+msgid "Sign in"
+msgstr "Увійти"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:139
+msgid "Sign Up"
+msgstr "Зареєструватися"
+
+#: src/widgets/auth/SignupForm/SignupForm.tsx:62
+msgid "Signing Up"
+msgstr "Реєстрація"
+
+#: src/widgets/app/Hero/Hero.tsx:106
+msgid "Smiling graduates in gowns and confederate caps hold their diplomas after the ceremony"
+msgstr "Усміхнені випускники у мантіях і конфедератках тримають дипломи після церемонії вручення"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:65
+msgid "Social science"
+msgstr "Соціальні науки"
+
+#: src/pages/courses/Search/Search.tsx:125
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:84
+msgid "Sort by:"
+msgstr "Сортувати по:"
+
+#: src/widgets/courses/CourseTopSection/hooks/useTranslatedLanguage.ts:20
+#: src/entities/course/hooks/useCourseLanguageLabel.tsx:13
+msgid "Spanish"
+msgstr "Іспанська"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:87
+msgid "Started"
+msgstr ""
+
+#: src/widgets/app/Testimonials/index.tsx:24
+#: src/widgets/app/Testimonials/index.tsx:32
+#: src/widgets/app/Testimonials/index.tsx:40
+#: src/widgets/app/Testimonials/index.tsx:48
+#: src/features/courses/CourseReview/CourseReview.tsx:22
+msgid "Student"
+msgstr "Студент"
+
+#: src/widgets/courses/CourseReviews/CourseReviews.tsx:24
+msgid "Student Stories"
+msgstr "Історії студентів"
+
+#: src/widgets/app/Testimonials/index.tsx:72
+msgid "STUDENT STORIES"
+msgstr "ІСТОРІЇ СТУДЕНТІВ"
+
+#: src/entities/course/hooks/useHardcodedCategories.ts:41
+msgid "Style and beauty"
+msgstr "Стиль і краса"
+
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:40
+msgid "Successfully registered"
+msgstr "Успішно зареєстровано"
+
+#: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:46
+msgid "Support"
+msgstr "Підтримка"
+
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:168
+msgid "Supported formats: <0>jpg, jpeg, png, webp, pdf</0>"
+msgstr ""
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:12
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:19
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:30
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:41
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:52
+#: src/widgets/auth/LoginForm/LoginForm.tsx:52
+#: src/widgets/auth/LoginForm/LoginForm.tsx:73
+msgid "This field is required"
+msgstr "Обов'язкове поле"
+
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:61
+msgid "This password is too common"
+msgstr "Пароль надто поширений"
+
+#: src/widgets/courses/Courses/Courses.tsx:63
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:76
+#: src/features/courses/SelectCategory/SelectCategory.tsx:18
+msgid "Topics"
+msgstr "Теми"
+
+#: src/features/courses/CourseInfoBadge/CourseInfoBadge.tsx:27
+msgid "Tuition"
+msgstr "Вартість"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:36
+msgid "Ukraine"
+msgstr "Україна"
+
+#: src/widgets/courses/CourseTopSection/hooks/useTranslatedLanguage.ts:17
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:59
+#: src/features/app/SearchFilters/SearchFilters.tsx:90
+#: src/entities/course/hooks/useCourseLanguageLabel.tsx:11
+msgid "Ukrainian"
+msgstr "Українська"
+
+#: src/widgets/auth/LoginForm/hooks/useHandleSubmit.ts:41
+msgid "Unable to log in with provided credentials"
+msgstr "Неможливо увійти з наданими обліковими даними"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:68
+msgid "Undergraduate Degrees"
+msgstr "Undergraduate Degrees"
+
+#: src/widgets/courses/Courses/Courses.tsx:68
+#: src/widgets/courses/CategoryCourses/CategoryCourses.tsx:81
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:49
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:56
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:65
+#: src/widgets/auth/LoginForm/hooks/useHandleSubmit.ts:44
+#: src/pages/faq/Faq/Faq.tsx:32
+#: src/pages/courses/Search/Search.tsx:151
+#: src/pages/courses/Course/Course.tsx:48
+#: src/pages/careers/CategoryCareers/CategoryCareers.tsx:35
+#: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:213
+msgid "Unexpected error occured. Please try again later"
+msgstr "Виникла неочікувана помилка. Будь ласка, спробуйте пізніше"
+
+#: src/features/app/SearchFilters/SearchFilters.tsx:47
+msgid "University"
+msgstr "Університет"
+
+#: src/widgets/app/SearchToolbar/SearchToolbar.tsx:84
+msgid "University courses"
+msgstr "Університетські курси"
+
+#: src/widgets/app/Partners/index.tsx:98
+msgid "University of"
+msgstr "Університет"
+
+#: src/widgets/universityPrograms/SearchResults/SearchResults.tsx:14
+msgid "Univesity courses"
+msgstr "Univesity courses"
+
+#: src/widgets/app/Header/Header.tsx:100
+#: src/widgets/app/Header/ui/Menu/Menu.tsx:49
+msgid "User"
+msgstr "Користувач"
+
+#: src/widgets/auth/SignupForm/hooks/useHandleSubmit.ts:54
+msgid "User with that email already exist"
+msgstr "Користувач з такою ел. поштою вже існує"
+
+#: src/features/courses/CoursesFilters/CoursesFilters.tsx:35
+msgid "With certificate"
+msgstr "З сертифікатом"
+
+#: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:126
+#: src/features/courses/CourseDetails/CourseDetails.tsx:50
+msgid "Yes"
+msgstr "Так"
+
+#: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:55
+msgid "Your passwords do no match"
+msgstr "Паролі не співпадають"

@@ -1,0 +1,35 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: colors.$text-secondary;
+  background-color: colors.$surface;
+}
+
+html {
+  min-height: auto;
+}
+
+body {
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-primary: #19212c;
+  --surface-brand: #2a5bd7;
+  --text-brand: #2a5bd7;
+  --text-secondary: #3f4752;
+  --text-secondary-light: #777a80;
+  --surface-primary: #f8f8f8;
+  --surface-yellow: #ffd600;
+  --surface-secondary: #262729;
+  --white: #fff;
+  --border-primary: #d9d9d9;
+}

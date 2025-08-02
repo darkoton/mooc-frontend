@@ -1,0 +1,72 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.topSection {
+  padding-top: 96px;
+  padding-bottom: 48px;
+}
+
+.mainSection {
+  margin-top: 24px;
+  margin-bottom: 72px;
+  overflow: hidden;
+}
+
+.mainSectionTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.sortWrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.resultsCount {
+  color: #3f4752;
+  font-size: 21px;
+}
+
+.errText {
+  color: colors.$error;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 32px;
+  min-height: 1826px;
+}
+
+.grid + .pagination {
+  margin-top: 48px;
+}
+
+@media (max-width: breakpoints.$md) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: breakpoints.$sm) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

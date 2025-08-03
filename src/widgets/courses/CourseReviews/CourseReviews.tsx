@@ -86,7 +86,11 @@ export default function CourseReviews() {
                         {userReviews.map((review, i) => (
                           <SwiperSlide key={i}>
                             <CourseReview
-                              onEdit={() => handleClickEdit(review)}
+                              onEdit={() =>
+                                auth
+                                  ? handleClickEdit(review)
+                                  : setShowAuthModal(true)
+                              }
                               isUser={true}
                               {...review}
                             />
@@ -96,7 +100,11 @@ export default function CourseReviews() {
                     ) : (
                       userReviews.map((review, i) => (
                         <CourseReview
-                          onEdit={() => handleClickEdit(review)}
+                          onEdit={() =>
+                            auth
+                              ? handleClickEdit(review)
+                              : setShowAuthModal(true)
+                          }
                           isUser={true}
                           key={i}
                           {...review}

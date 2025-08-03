@@ -41,6 +41,17 @@ class ReviewService {
   ): Promise<IGetReviewResponse> {
     return (await api.put(`/courses/reviews/${id}/`, body, config)).data;
   }
+
+  async put(
+    id: string,
+    body: IPostReviewRequest,
+    config?: AxiosRequestConfig
+  ): Promise<IGetReviewResponse> {
+
+    return (
+      await api.post(`/courses/reviews/${id}/`, body, config)
+    ).data;
+  }
 }
 
 export const reviewService = new ReviewService();

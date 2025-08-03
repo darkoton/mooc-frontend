@@ -10,13 +10,14 @@ import Rating from "@shared/ui/Rating/Rating";
 
 type CourseReviewProps = {
   isUser?: boolean;
+  onEdit?: () => void
 } & IReview;
 
 export default function CourseReview({
   isUser = false,
+  onEdit,
   ...props
 }: CourseReviewProps) {
-  console.log(props);
 
   return (
     <article className={clsx(s.review, isUser && s.isUser)}>
@@ -51,7 +52,7 @@ export default function CourseReview({
       </aside>
 
       {isUser && (
-        <button className={s.editButton}>
+        <button onClick={onEdit} className={s.editButton}>
           <span>
             <Trans>Edit</Trans>
           </span>

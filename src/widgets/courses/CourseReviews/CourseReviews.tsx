@@ -73,13 +73,18 @@ export default function CourseReviews() {
                       >
                         {userReviews.map((review, i) => (
                           <SwiperSlide key={i}>
-                            <CourseReview isUser={true} {...review} />
+                            <CourseReview onEdit={() =>
+                              auth ? setShowReviewModal(true) : setShowAuthModal(true)
+                            } isUser={true} {...review} />
                           </SwiperSlide>
                         ))}
                       </Swiper>
                     ) : (
                       userReviews.map((review, i) => (
-                        <CourseReview isUser={true} key={i} {...review} />
+                        <CourseReview onEdit={() =>
+                          auth ? setShowReviewModal(true) : setShowAuthModal(true)
+                        }
+                          isUser={true} key={i} {...review} />
                       ))
                     )}
 

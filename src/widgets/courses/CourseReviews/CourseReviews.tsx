@@ -77,6 +77,7 @@ export default function CourseReviews() {
 
                     {sm ? (
                       <Swiper
+                        className={s.slider}
                         spaceBetween={16}
                         slidesPerView={1}
                         onSlideChange={(swiper) =>
@@ -118,6 +119,7 @@ export default function CourseReviews() {
 
                 {sm ? (
                   <Swiper
+                    className={s.slider}
                     spaceBetween={16}
                     slidesPerView={1}
                     onSlideChange={(swiper) =>
@@ -137,7 +139,7 @@ export default function CourseReviews() {
                 )}
 
                 <div className={s.pagination}>
-                  {reviews.map((_, index) => {
+                  {notUserReviews.map((_, index) => {
                     return (
                       <div
                         key={index}

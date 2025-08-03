@@ -32,6 +32,8 @@
 .imgWrapper {
   width: 81px;
   height: 81px;
+  min-width: 81px;
+  min-height: 81px;
   border-radius: 50%;
   overflow: hidden;
   border: 8px solid #f8f8f8;
@@ -115,15 +117,29 @@
 }
 
 @media (max-width: breakpoints.$sm) {
+  .review {
+    flex-direction: column;
+  }
+
   .title {
     font-size: 14px;
+  }
+
+  .header {
+    flex-direction: row;
+    max-width: 100%;
+    padding-right: 80px;
+  }
+
+  .left {
+    flex-direction: column;
   }
 
   .middle {
     font-size: 14px;
   }
 
-  .right {
-    display: none;
-  }
+  // .right {
+  //   display: none;
+  // }
 }

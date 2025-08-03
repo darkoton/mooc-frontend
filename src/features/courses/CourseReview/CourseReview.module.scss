@@ -6,13 +6,27 @@
   border: 1px solid #ececec;
   border-radius: 12px;
   padding: 24px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.isUser {
+  border: 1px solid rgba(255, 214, 0, 0.42);
 }
 
 .header {
   margin-bottom: 24px;
   display: flex;
-  align-items: center;
+  align-items: start;
   column-gap: 24px;
+  flex-direction: column;
+  row-gap: 16px;
+  max-width: 110px;
+}
+
+.left {
+  display: flex;
+  column-gap: 62px;
 }
 
 .imgWrapper {
@@ -29,10 +43,15 @@
   }
 }
 
+.userInfo {
+  max-width: 100%;
+}
+
 .title {
   margin-top: 0;
   margin-bottom: 4px;
   font-size: 16px;
+  word-break: break-all;
 }
 
 .subtitle {
@@ -47,6 +66,52 @@
   align-self: flex-end;
   margin-bottom: -24px;
   margin-right: -24px;
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
+  display: flex;
+}
+
+.editButton {
+  padding: 12px 24.5px;
+  border: 1px solid rgba(71, 60, 5, 0.3);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #473c05;
+  background-color: #fff;
+  position: absolute;
+  top: 24px;
+  right: 12px;
+
+  @media (any-hover: hover) {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #262729;
+}
+
+.middle {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 @media (max-width: breakpoints.$sm) {

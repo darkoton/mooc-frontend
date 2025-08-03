@@ -39,7 +39,7 @@ msgstr "{0, plural, one {# Результат} few {# Результати} othe
 #. placeholder {0}: 20
 #. placeholder {0}: 1000
 #: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:102
-#: src/widgets/courses/CourseReviews/CourseReviews.tsx:65
+#: src/widgets/courses/CourseReviews/CourseReviews.tsx:79
 #: src/features/courses/DiscoverCourses/DiscoverCourses.tsx:43
 msgid "{0, plural, one {# Review} few {# Reviews} other {# Reviews}}"
 msgstr "{0, plural, one {# Відгук} few {# Відгуки} other {# Відгуків}}"
@@ -113,12 +113,16 @@ msgstr "Інформація"
 msgid "Access special courses and discounts"
 msgstr "Отримайте доступ до спеціальних курсів та знижок"
 
+#: src/widgets/courses/CourseReviews/CourseReviews.tsx:93
+msgid "Add a review"
+msgstr ""
+
 #: src/widgets/courses/Courses/Courses.tsx:77
 #: src/pages/courses/Search/Search.tsx:53
 msgid "All courses"
 msgstr "Всі курси"
 
-#: src/widgets/auth/SignupForm/SignupForm.tsx:146
+#: src/widgets/auth/SignupForm/SignupForm.tsx:145
 msgid "Already have an account?"
 msgstr "Вже маєте аккаунт?"
 
@@ -238,7 +242,7 @@ msgstr "Обрати університети"
 msgid "Doctoral Degrees"
 msgstr "Доктор наук"
 
-#: src/widgets/auth/LoginForm/LoginForm.tsx:98
+#: src/widgets/auth/LoginForm/LoginForm.tsx:99
 msgid "Don't have an account?"
 msgstr "Немаєте аккаунту?"
 
@@ -253,7 +257,7 @@ msgid "Education"
 msgstr "Освіта"
 
 #: src/widgets/auth/SignupForm/SignupForm.tsx:67
-#: src/widgets/auth/LoginForm/LoginForm.tsx:50
+#: src/widgets/auth/LoginForm/LoginForm.tsx:52
 msgid "Email"
 msgstr "Ел. пошта"
 
@@ -359,11 +363,15 @@ msgstr "Graduate Degrees"
 msgid "Home"
 msgstr "Головна"
 
-#: src/widgets/courses/Courses/hooks/useBreadcrumbs.ts:11
 #: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:35
+#: src/widgets/courses/Courses/hooks/useBreadcrumbs.ts:11
 #: src/pages/courses/Search/Search.tsx:49
 msgid "Homepage"
 msgstr "Головна"
+
+#: src/widgets/courses/CourseReviews/ReviewModal/ReviewModal.tsx:59
+msgid "How would you rate this course?"
+msgstr ""
 
 #: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:60
 #: src/features/courses/CourseDetails/CourseDetails.tsx:32
@@ -379,8 +387,12 @@ msgstr "Ілюстрація інструментів онлайн-навчан�
 msgid "International"
 msgstr "Інші країни"
 
+#: src/widgets/courses/CourseReviews/ReviewModal/ReviewModal.tsx:54
+msgid "Introduction to Notion for Creative Projects"
+msgstr ""
+
 #: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:15
-#: src/widgets/auth/LoginForm/LoginForm.tsx:55
+#: src/widgets/auth/LoginForm/LoginForm.tsx:57
 msgid "Invalid email address"
 msgstr "Невалідна адреса ел. пошти"
 
@@ -409,10 +421,18 @@ msgstr "Дізнатися більше"
 msgid "Less than 1 week"
 msgstr "До одного тижня"
 
-#: src/widgets/auth/LoginForm/LoginForm.tsx:44
-#: src/widgets/auth/LoginForm/LoginForm.tsx:91
+#: src/widgets/auth/LoginForm/LoginForm.tsx:46
+#: src/widgets/auth/LoginForm/LoginForm.tsx:93
 msgid "Log In"
 msgstr "Вхід"
+
+#: src/widgets/courses/CourseReviews/LoginModal/LoginModal.tsx:24
+msgid "Login first"
+msgstr ""
+
+#: src/features/auth/LoginModal/LoginModal.tsx:24
+msgid "Login required"
+msgstr ""
 
 #: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:60
 msgid "Logout"
@@ -465,6 +485,10 @@ msgstr "Популярності"
 #: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:38
 msgid "My courses"
 msgstr "Мої курси"
+
+#: src/widgets/courses/CourseReviews/ReviewModal/ReviewModal.tsx:64
+msgid "My review"
+msgstr ""
 
 #: src/entities/course/hooks/useHardcodedCategories.ts:61
 msgid "Natural science"
@@ -525,7 +549,7 @@ msgid "Paid"
 msgstr "Платні"
 
 #: src/widgets/auth/SignupForm/SignupForm.tsx:104
-#: src/widgets/auth/LoginForm/LoginForm.tsx:69
+#: src/widgets/auth/LoginForm/LoginForm.tsx:71
 msgid "Password"
 msgstr "Пароль"
 
@@ -535,6 +559,14 @@ msgstr "Пароль не може складатися тільки з цифр
 
 #: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:181
 msgid "Planned"
+msgstr ""
+
+#: src/widgets/courses/CourseReviews/LoginModal/LoginModal.tsx:27
+msgid "Please log in to your account before adding or changing saved items"
+msgstr ""
+
+#: src/features/auth/LoginModal/LoginModal.tsx:27
+msgid "Please log in to your account first"
 msgstr ""
 
 #: src/features/courses/CoursesFilters/CoursesFilters.tsx:70
@@ -644,7 +676,7 @@ msgstr ""
 msgid "Student"
 msgstr "Студент"
 
-#: src/widgets/courses/CourseReviews/CourseReviews.tsx:24
+#: src/widgets/courses/CourseReviews/CourseReviews.tsx:35
 msgid "Student Stories"
 msgstr "Історії студентів"
 
@@ -673,8 +705,8 @@ msgstr ""
 #: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:30
 #: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:41
 #: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:52
-#: src/widgets/auth/LoginForm/LoginForm.tsx:52
-#: src/widgets/auth/LoginForm/LoginForm.tsx:73
+#: src/widgets/auth/LoginForm/LoginForm.tsx:54
+#: src/widgets/auth/LoginForm/LoginForm.tsx:75
 msgid "This field is required"
 msgstr "Обов'язкове поле"
 

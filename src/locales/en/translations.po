@@ -39,7 +39,7 @@ msgstr "{0, plural, one {# Result} few {# Results} other {# Results}}"
 #. placeholder {0}: 20
 #. placeholder {0}: 1000
 #: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:102
-#: src/widgets/courses/CourseReviews/CourseReviews.tsx:65
+#: src/widgets/courses/CourseReviews/CourseReviews.tsx:79
 #: src/features/courses/DiscoverCourses/DiscoverCourses.tsx:43
 msgid "{0, plural, one {# Review} few {# Reviews} other {# Reviews}}"
 msgstr "{0, plural, one {# Review} few {# Reviews} other {# Reviews}}"
@@ -113,12 +113,16 @@ msgstr "About"
 msgid "Access special courses and discounts"
 msgstr "Access special courses and discounts"
 
+#: src/widgets/courses/CourseReviews/CourseReviews.tsx:93
+msgid "Add a review"
+msgstr "Add a review"
+
 #: src/widgets/courses/Courses/Courses.tsx:77
 #: src/pages/courses/Search/Search.tsx:53
 msgid "All courses"
 msgstr "All courses"
 
-#: src/widgets/auth/SignupForm/SignupForm.tsx:146
+#: src/widgets/auth/SignupForm/SignupForm.tsx:145
 msgid "Already have an account?"
 msgstr "Already have an account?"
 
@@ -238,7 +242,7 @@ msgstr "Discover universities"
 msgid "Doctoral Degrees"
 msgstr "Doctoral Degrees"
 
-#: src/widgets/auth/LoginForm/LoginForm.tsx:98
+#: src/widgets/auth/LoginForm/LoginForm.tsx:99
 msgid "Don't have an account?"
 msgstr "Don't have an account?"
 
@@ -253,7 +257,7 @@ msgid "Education"
 msgstr "Education"
 
 #: src/widgets/auth/SignupForm/SignupForm.tsx:67
-#: src/widgets/auth/LoginForm/LoginForm.tsx:50
+#: src/widgets/auth/LoginForm/LoginForm.tsx:52
 msgid "Email"
 msgstr "Email"
 
@@ -359,11 +363,15 @@ msgstr "Graduate Degrees"
 msgid "Home"
 msgstr "Home"
 
-#: src/widgets/courses/Courses/hooks/useBreadcrumbs.ts:11
 #: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:35
+#: src/widgets/courses/Courses/hooks/useBreadcrumbs.ts:11
 #: src/pages/courses/Search/Search.tsx:49
 msgid "Homepage"
 msgstr "Homepage"
+
+#: src/widgets/courses/CourseReviews/ReviewModal/ReviewModal.tsx:59
+msgid "How would you rate this course?"
+msgstr "How would you rate this course?"
 
 #: src/widgets/courses/CourseTopSection/CourseTopSection.tsx:60
 #: src/features/courses/CourseDetails/CourseDetails.tsx:32
@@ -379,8 +387,12 @@ msgstr "Illustration of online learning and education tools"
 msgid "International"
 msgstr "International"
 
+#: src/widgets/courses/CourseReviews/ReviewModal/ReviewModal.tsx:54
+msgid "Introduction to Notion for Creative Projects"
+msgstr "Introduction to Notion for Creative Projects"
+
 #: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:15
-#: src/widgets/auth/LoginForm/LoginForm.tsx:55
+#: src/widgets/auth/LoginForm/LoginForm.tsx:57
 msgid "Invalid email address"
 msgstr "Invalid email address"
 
@@ -409,10 +421,18 @@ msgstr "Learn more"
 msgid "Less than 1 week"
 msgstr "Less than 1 week"
 
-#: src/widgets/auth/LoginForm/LoginForm.tsx:44
-#: src/widgets/auth/LoginForm/LoginForm.tsx:91
+#: src/widgets/auth/LoginForm/LoginForm.tsx:46
+#: src/widgets/auth/LoginForm/LoginForm.tsx:93
 msgid "Log In"
 msgstr "Log In"
+
+#: src/widgets/courses/CourseReviews/LoginModal/LoginModal.tsx:24
+msgid "Login first"
+msgstr "Login first"
+
+#: src/features/auth/LoginModal/LoginModal.tsx:24
+msgid "Login required"
+msgstr "Login required"
 
 #: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:60
 msgid "Logout"
@@ -465,6 +485,10 @@ msgstr "Most popular"
 #: src/widgets/app/Header/ui/UserMenu/UserMenu.tsx:38
 msgid "My courses"
 msgstr "My courses"
+
+#: src/widgets/courses/CourseReviews/ReviewModal/ReviewModal.tsx:64
+msgid "My review"
+msgstr "My review"
 
 #: src/entities/course/hooks/useHardcodedCategories.ts:61
 msgid "Natural science"
@@ -525,7 +549,7 @@ msgid "Paid"
 msgstr "Paid"
 
 #: src/widgets/auth/SignupForm/SignupForm.tsx:104
-#: src/widgets/auth/LoginForm/LoginForm.tsx:69
+#: src/widgets/auth/LoginForm/LoginForm.tsx:71
 msgid "Password"
 msgstr "Password"
 
@@ -536,6 +560,14 @@ msgstr "Password is entirely numeric"
 #: src/features/courses/SaveCoursePopover/SaveCoursePopover.tsx:181
 msgid "Planned"
 msgstr "Planned"
+
+#: src/widgets/courses/CourseReviews/LoginModal/LoginModal.tsx:27
+msgid "Please log in to your account before adding or changing saved items"
+msgstr "Please log in to your account before adding or changing saved items"
+
+#: src/features/auth/LoginModal/LoginModal.tsx:27
+msgid "Please log in to your account first"
+msgstr "Please log in to your account first"
 
 #: src/features/courses/CoursesFilters/CoursesFilters.tsx:70
 msgid "Price"
@@ -644,7 +676,7 @@ msgstr "Started"
 msgid "Student"
 msgstr "Student"
 
-#: src/widgets/courses/CourseReviews/CourseReviews.tsx:24
+#: src/widgets/courses/CourseReviews/CourseReviews.tsx:35
 msgid "Student Stories"
 msgstr "Student Stories"
 
@@ -673,8 +705,8 @@ msgstr "Supported formats: <0>jpg, jpeg, png, webp, pdf</0>"
 #: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:30
 #: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:41
 #: src/widgets/auth/SignupForm/hooks/useValidationSchema.ts:52
-#: src/widgets/auth/LoginForm/LoginForm.tsx:52
-#: src/widgets/auth/LoginForm/LoginForm.tsx:73
+#: src/widgets/auth/LoginForm/LoginForm.tsx:54
+#: src/widgets/auth/LoginForm/LoginForm.tsx:75
 msgid "This field is required"
 msgstr "This field is required"
 

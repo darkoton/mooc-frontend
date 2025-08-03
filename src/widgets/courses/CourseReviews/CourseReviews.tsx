@@ -17,6 +17,7 @@ import s from "./CourseReviews.module.scss";
 import { useReviews } from "./hooks/useReviews";
 import { useRating } from "./hooks/useRating";
 import { useUserStore } from "@entities/user";
+import { IReview } from "@entities/review";
 
 const LoginModal = lazy(() => import("./LoginModal/LoginModal"));
 const ReviewModal = lazy(() => import("./ReviewModal/ReviewModal"));
@@ -35,6 +36,17 @@ export default function CourseReviews() {
 
   const { reviews } = useReviews(uuid);
   const { rating } = useRating(reviews);
+
+  const [modalReviewData, setModalReviewData] = useState<IReview | null>(null);
+  const [modalReviewMode, setModalReviewMode] = useState<"create" | "edit">(
+    "create"
+  );
+
+  function handleClickEdit(review: IReview) {
+    setModalReviewMode("edit");
+    setShowReviewModal(true);
+    setModalReviewData(review);
+  }
 
   const userReviews = useMemo(() => {
     return reviews.filter(
@@ -73,13 +85,22 @@ export default function CourseReviews() {
                       >
                         {userReviews.map((review, i) => (
                           <SwiperSlide key={i}>
-                            <CourseReview isUser={true} {...review} />
+                            <CourseReview
+                              onEdit={() => handleClickEdit(review)}
+                              isUser={true}
+                              {...review}
+                            />
                           </SwiperSlide>
                         ))}
                       </Swiper>
                     ) : (
                       userReviews.map((review, i) => (
-                        <CourseReview isUser={true} key={i} {...review} />
+                        <CourseReview
+                          onEdit={() => handleClickEdit(review)}
+                          isUser={true}
+                          key={i}
+                          {...review}
+                        />
                       ))
                     )}
 
@@ -160,7 +181,12 @@ export default function CourseReviews() {
       </Suspense>
       <Suspense fallback={<Backdrop open />}>
         {showReviewModal && (
-          <ReviewModal logo="#" onClose={() => setShowReviewModal(false)} />
+          <ReviewModal
+            mode={modalReviewMode}
+            review={modalReviewData}
+            logo="#"
+            onClose={() => setShowReviewModal(false)}
+          />
         )}
       </Suspense>
     </>

@@ -24,7 +24,7 @@ const ReviewModal = lazy(() => import("./ReviewModal/ReviewModal"));
 export default function CourseReviews() {
   const { sm } = useWindowDimensions();
   const { uuid } = useParams();
-  const { user } = useUserStore()
+  const { user } = useUserStore();
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -33,16 +33,20 @@ export default function CourseReviews() {
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showReviewModal, setShowReviewModal] = useState(false);
 
-  const { reviews } = useReviews(uuid)
-  const { rating } = useRating(reviews)
+  const { reviews } = useReviews(uuid);
+  const { rating } = useRating(reviews);
 
   const userReviews = useMemo(() => {
-    return reviews.filter(review => review.username === `${user?.first_name} ${user?.last_name}`)
-  }, [reviews, user?.first_name, user?.last_name])
+    return reviews.filter(
+      (review) => review.username === `${user?.first_name} ${user?.last_name}`
+    );
+  }, [reviews, user?.first_name, user?.last_name]);
 
   const notUserReviews = useMemo(() => {
-    return reviews.filter(review => review.username !== `${user?.first_name} ${user?.last_name}`)
-  }, [reviews, user?.first_name, user?.last_name])
+    return reviews.filter(
+      (review) => review.username !== `${user?.first_name} ${user?.last_name}`
+    );
+  }, [reviews, user?.first_name, user?.last_name]);
 
   return (
     <>
@@ -53,65 +57,75 @@ export default function CourseReviews() {
           </h2>
 
           <div className={s.mainContent}>
-            {reviews.length > 0 ? <div className={s.left}>
+            {reviews.length > 0 ? (
+              <div className={s.left}>
+                {userReviews.length > 0 && (
+                  <>
+                    <h3 className={s.myReview}>My review</h3>
 
-              {userReviews.length > 0 &&
-                <>
-                  <h3 className={s.myReview}>My review</h3>
+                    {sm ? (
+                      <Swiper
+                        spaceBetween={16}
+                        slidesPerView={1}
+                        onSlideChange={(swiper) =>
+                          setCurrentSlide(swiper.activeIndex)
+                        }
+                      >
+                        {userReviews.map((review, i) => (
+                          <SwiperSlide key={i}>
+                            <CourseReview isUser={true} {...review} />
+                          </SwiperSlide>
+                        ))}
+                      </Swiper>
+                    ) : (
+                      userReviews.map((review, i) => (
+                        <CourseReview isUser={true} key={i} {...review} />
+                      ))
+                    )}
 
-                  {sm ? (
-                    <Swiper
-                      spaceBetween={16}
-                      slidesPerView={1}
-                      onSlideChange={(swiper) =>
-                        setCurrentSlide(swiper.activeIndex)
-                      }
-                    >
-                      {userReviews.map((review, i) => (
-                        <SwiperSlide key={i}>
-                          <CourseReview {...review} />
-                        </SwiperSlide>
-                      ))}
-                    </Swiper>
-                  ) : (
-                    userReviews.map((review, i) => <CourseReview key={i} {...review} />)
-                  )}
-                </>}
+                    <div className={s.line}></div>
+                  </>
+                )}
 
-              {sm ? (
-                <Swiper
-                  spaceBetween={16}
-                  slidesPerView={1}
-                  onSlideChange={(swiper) =>
-                    setCurrentSlide(swiper.activeIndex)
-                  }
-                >
-                  {notUserReviews.map((review, i) => (
-                    <SwiperSlide key={i}>
-                      <CourseReview {...review} />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              ) : (
-                notUserReviews.map((review, i) => <CourseReview key={i} {...review} />)
-              )}
+                {sm ? (
+                  <Swiper
+                    spaceBetween={16}
+                    slidesPerView={1}
+                    onSlideChange={(swiper) =>
+                      setCurrentSlide(swiper.activeIndex)
+                    }
+                  >
+                    {notUserReviews.map((review, i) => (
+                      <SwiperSlide key={i}>
+                        <CourseReview {...review} />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                ) : (
+                  notUserReviews.map((review, i) => (
+                    <CourseReview key={i} {...review} />
+                  ))
+                )}
 
-              <div className={s.pagination}>
-                {reviews.map((_, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className={clsx(
-                        s.paginationMark,
-                        currentSlide === index && s.active
-                      )}
-                    ></div>
-                  );
-                })}
+                <div className={s.pagination}>
+                  {reviews.map((_, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className={clsx(
+                          s.paginationMark,
+                          currentSlide === index && s.active
+                        )}
+                      ></div>
+                    );
+                  })}
+                </div>
               </div>
-            </div> :
-              <div className={s.empty}><Trans>Empty</Trans></div>
-            }
+            ) : (
+              <div className={s.empty}>
+                <Trans>Empty</Trans>
+              </div>
+            )}
 
             <aside className={s.right}>
               <div className={s.rightTop}>

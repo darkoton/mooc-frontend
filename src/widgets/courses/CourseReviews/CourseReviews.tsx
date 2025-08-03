@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useMemo, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import clsx from "clsx";
 import { Plural, Trans } from "@lingui/react/macro";
@@ -9,16 +9,22 @@ import Container from "@shared/ui/Container/Container";
 import useWindowDimensions from "@shared/hooks/useWindowDimensions";
 import Backdrop from "@shared/ui/Backdrop/Backdrop";
 import { useAuthStore } from "@entities/auth";
+import { useParams } from "react-router-dom";
 
 import PixelArtDotsIcon from "@shared/assets/icons/pixelArtDots.svg?react";
 
 import s from "./CourseReviews.module.scss";
+import { useReviews } from "./hooks/useReviews";
+import { useRating } from "./hooks/useRating";
+import { useUserStore } from "@entities/user";
 
 const LoginModal = lazy(() => import("./LoginModal/LoginModal"));
 const ReviewModal = lazy(() => import("./ReviewModal/ReviewModal"));
 
 export default function CourseReviews() {
   const { sm } = useWindowDimensions();
+  const { uuid } = useParams();
+  const { user } = useUserStore()
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -26,6 +32,17 @@ export default function CourseReviews() {
 
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showReviewModal, setShowReviewModal] = useState(false);
+
+  const { reviews } = useReviews(uuid)
+  const { rating } = useRating(reviews)
+
+  const userReviews = useMemo(() => {
+    return reviews.filter(review => review.username === `${user?.first_name} ${user?.last_name}`)
+  }, [reviews, user?.first_name, user?.last_name])
+
+  const notUserReviews = useMemo(() => {
+    return reviews.filter(review => review.username !== `${user?.first_name} ${user?.last_name}`)
+  }, [reviews, user?.first_name, user?.last_name])
 
   return (
     <>
@@ -36,7 +53,31 @@ export default function CourseReviews() {
           </h2>
 
           <div className={s.mainContent}>
-            <div className={s.left}>
+            {reviews.length > 0 ? <div className={s.left}>
+
+              {userReviews.length > 0 &&
+                <>
+                  <h3 className={s.myReview}>My review</h3>
+
+                  {sm ? (
+                    <Swiper
+                      spaceBetween={16}
+                      slidesPerView={1}
+                      onSlideChange={(swiper) =>
+                        setCurrentSlide(swiper.activeIndex)
+                      }
+                    >
+                      {userReviews.map((review, i) => (
+                        <SwiperSlide key={i}>
+                          <CourseReview {...review} />
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+                  ) : (
+                    userReviews.map((review, i) => <CourseReview key={i} {...review} />)
+                  )}
+                </>}
+
               {sm ? (
                 <Swiper
                   spaceBetween={16}
@@ -45,18 +86,18 @@ export default function CourseReviews() {
                     setCurrentSlide(swiper.activeIndex)
                   }
                 >
-                  {Array.from(Array(4)).map((_, i) => (
+                  {notUserReviews.map((review, i) => (
                     <SwiperSlide key={i}>
-                      <CourseReview />
+                      <CourseReview {...review} />
                     </SwiperSlide>
                   ))}
                 </Swiper>
               ) : (
-                Array.from(Array(4)).map((_, i) => <CourseReview key={i} />)
+                notUserReviews.map((review, i) => <CourseReview key={i} {...review} />)
               )}
 
               <div className={s.pagination}>
-                {Array.from(Array(4)).map((_, index) => {
+                {reviews.map((_, index) => {
                   return (
                     <div
                       key={index}
@@ -68,16 +109,18 @@ export default function CourseReviews() {
                   );
                 })}
               </div>
-            </div>
+            </div> :
+              <div className={s.empty}><Trans>Empty</Trans></div>
+            }
 
             <aside className={s.right}>
               <div className={s.rightTop}>
                 <h3 className={s.rating}>
-                  <StarIcon /> 4,5
+                  <StarIcon /> {rating}
                 </h3>
                 <a href="#" className={s.reviewsLink}>
                   <Plural
-                    value={1000}
+                    value={reviews.length}
                     one="# Review"
                     few="# Reviews"
                     other="# Reviews"

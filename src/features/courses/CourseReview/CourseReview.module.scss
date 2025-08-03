@@ -6,6 +6,8 @@
   border: 1px solid #ececec;
   border-radius: 12px;
   padding: 24px;
+  position: relative;
+  justify-content: space-between;
 }
 
 .header {
@@ -47,6 +49,10 @@
   align-self: flex-end;
   margin-bottom: -24px;
   margin-right: -24px;
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
+  display: flex;
 }
 
 @media (max-width: breakpoints.$sm) {

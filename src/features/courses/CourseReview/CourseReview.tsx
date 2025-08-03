@@ -3,8 +3,9 @@ import { Trans } from "@lingui/react/macro";
 import DecorIcon from "./assets/images/decor.svg?react";
 
 import s from "./CourseReview.module.scss";
+import { IReview } from "@entities/review";
 
-export default function CourseReview() {
+export default function CourseReview(props: IReview) {
   return (
     <article className={s.review}>
       <div className={s.left}>
@@ -12,12 +13,12 @@ export default function CourseReview() {
           <div className={s.imgWrapper}>
             <img
               src={require("./assets/images/person.jpg")}
-              alt="Nathan Clark"
+              alt={props.username}
             />
           </div>
 
           <div>
-            <h5 className={s.title}>Nathan Clark</h5>
+            <h5 className={s.title}>{props.username}</h5>
             <p className={s.subtitle}>
               <Trans>Student</Trans>
             </p>
@@ -26,8 +27,7 @@ export default function CourseReview() {
 
         <footer className={s.middle}>
           <Trans>
-            “Drewl has done so much work with Headless platforms, and we knew
-            the Drewl team was incredibly well-versed in that space.”
+            {props.text}
           </Trans>
         </footer>
       </div>

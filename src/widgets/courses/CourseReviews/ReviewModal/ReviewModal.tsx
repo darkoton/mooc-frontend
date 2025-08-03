@@ -1,13 +1,14 @@
-import { useId } from "react";
+import { useId, useState } from "react";
 import { Trans } from "@lingui/react/macro";
-import { Bounce, toast as notify } from "react-toastify";
 
 import Modal from "@shared/ui/Modal/Modal";
 import Rating from "@shared/ui/Rating/Rating";
 
 import s from "./ReviewModal.module.scss";
 import Close from "./assets/icons/Close";
-import Success from './assets/icons/Success';
+import { IPostReviewRequest, useReviewsStore } from "@entities/review";
+import { useParams } from "react-router-dom";
+import { useUserStore } from "@entities/user";
 
 interface ReviewModalProps {
   onClose: () => void;
@@ -16,30 +17,23 @@ interface ReviewModalProps {
 
 export default function ReviewModal({ onClose, logo }: ReviewModalProps) {
   const id = useId();
+  const { uuid } = useParams();
+  const { user } = useUserStore()
 
-  function submit() {
-    notify(NotificationSuccess, {
-      position: "bottom-center",
-      autoClose: 5000,
-      closeButton: false,
-      hideProgressBar: true,
-      closeOnClick: false,
-      pauseOnHover: false,
-      draggable: false,
-      progress: undefined,
-      theme: "colored",
-      transition: Bounce,
-      icon: false,
-      style: {
-        background: "#4DB930",
-        color: "#fff",
-        padding: "0",
-        minHeight: 'auto'
-      },
-    });
+  const [form, setForm] = useState<IPostReviewRequest>({
+    course: uuid || '',
+    username: user ? (user.first_name + ' ' + user.last_name) : '',
+    text: '',
+    rating: 0
+  })
 
+  const { postReview } = useReviewsStore()
 
+  async function submit() {
+
+    await postReview(form)
     onClose()
+
   }
 
   return (
@@ -54,9 +48,9 @@ export default function ReviewModal({ onClose, logo }: ReviewModalProps) {
           <Trans>Introduction to Notion for Creative Projects</Trans>
         </h3>
 
-        <form className={s.form}>
+        <div className={s.form}>
           <div className={s.rateRow}>
-            <Trans>How would you rate this course?</Trans> <Rating />
+            <Trans>How would you rate this course?</Trans> <Rating value={form.rating} onChange={(value) => { setForm({ ...form, rating: value }) }} />
           </div>
 
           <div className={s.formGroup}>
@@ -64,30 +58,25 @@ export default function ReviewModal({ onClose, logo }: ReviewModalProps) {
               <Trans>My review</Trans>
             </label>
             <div className={s.textAreaWrapper}>
-              <textarea id={`review-${id}`} className={s.textArea} rows={5} />
+              <textarea onInput={(e: React.ChangeEvent<HTMLTextAreaElement>) => {
+                setForm({ ...form, text: e.target.value })
+              }}
+                id={`review-${id}`} className={s.textArea} rows={5} />
 
               <div className={s.buttons}>
                 <button onClick={onClose} type="button" className={s.buttonCancel}>
                   Cancel
                 </button>
-                <button onClick={submit} type="submit" className={s.buttonSubmit}>
+                <button onClick={submit} type="button" className={s.buttonSubmit}>
                   Submit Review
                 </button>
               </div>
             </div>
             <div className={s.counter}>0 / 2000</div>
           </div>
-        </form>
+        </div>
       </div>
     </Modal>
   );
 }
 
-function NotificationSuccess() {
-  return (
-    <div className={s.toast}>
-      <Success />
-      <span className={s.toastText}>Review succesfully added! </span>
-    </div>
-  );
-}

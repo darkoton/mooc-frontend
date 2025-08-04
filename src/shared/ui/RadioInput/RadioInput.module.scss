@@ -16,7 +16,6 @@
   align-items: center;
   column-gap: 16px;
   cursor: pointer;
-  @include mixins.hoverArea(100%, 48px);
 }
 
 .mark {

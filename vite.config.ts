@@ -6,6 +6,7 @@ import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 import { lingui } from "@lingui/vite-plugin";
 import commonjs from "vite-plugin-commonjs";
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -41,6 +42,7 @@ export default defineConfig({
     lingui(),
     svgr(),
     commonjs(),
+    tailwindcss(),
   ],
   server: {
     allowedHosts: true,
